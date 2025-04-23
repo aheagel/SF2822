@@ -3,8 +3,18 @@ import pandas as pd
 import requests
 import time
 
+def estimate_capacity_from_name(name):
+    if 'E4' in name or 'E18' in name or 'E20' in name:
+        return 2000  # vehicles per hour for motorways
+    elif name.startswith('27') or name.startswith('22'):
+        return 1200  # secondary arterials
+    elif name.startswith('75') or name.startswith('73'):
+        return 800   # smaller urban roads
+    else:
+        return 1000  # fallback
+
 # Path to your KML
-kml_path = 'Main Edges (1).kml'
+kml_path = 'Main Edges.kml'
 
 # Parse KML
 tree = ET.parse(kml_path)
@@ -41,6 +51,7 @@ df = pd.DataFrame(rows)
 df['distance_km']   = df['distance_m'] / 1000
 df['duration_min']  = df['duration_s'] / 60
 df['avg_speed_kmh'] = df['distance_km'] / (df['duration_min'] / 60)
+df['capacity_veh_per_hr'] = df['edge_name'].apply(estimate_capacity_from_name)
 
 # Output
 print(df[['edge_name','distance_km','duration_min','avg_speed_kmh']])
