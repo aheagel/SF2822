@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Main Edges</name>
+    <Style id="line-000000-1200-normal">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>1.2</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-000000-1200-highlight">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>1.8</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-000000-1200">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-000000-1200-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-000000-1200-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>E18 North</name>
+      <description>Täby to bergshamra</description>
+      <styleUrl>#line-000000-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          18.0703299,59.4419,0
+          18.0262482,59.3804425,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>E18 South</name>
+      <description>Bergshamra to T-centralen</description>
+      <styleUrl>#line-000000-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          18.0262482,59.3804425,0
+          18.0566442,59.3312336,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>E20 East</name>
+      <description>Lidingö to T-centralen</description>
+      <styleUrl>#line-000000-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          18.1468,59.36296,0
+          18.0566442,59.3312336,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>279 West</name>
+      <description>Vällingby to Bergshamra</description>
+      <styleUrl>#line-000000-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          17.8691434,59.3670813,0
+          18.0262482,59.3804425,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>275 West</name>
+      <description>Vällingby to T-centralen</description>
+      <styleUrl>#line-000000-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          17.8691434,59.3670813,0
+          18.0566442,59.3312336,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>E20 South</name>
+      <description>Skärholmen to Västberga</description>
+      <styleUrl>#line-000000-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          17.9023009,59.2742539,0
+          18.0296456,59.2993696,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>75 Mid</name>
+      <description>Västberga to Globen</description>
+      <styleUrl>#line-000000-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          18.0296456,59.2993696,0
+          18.0830361,59.2935395,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>73 South</name>
+      <description>Farsta to Globen</description>
+      <styleUrl>#line-000000-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          18.0919125,59.2428599,0
+          18.0830361,59.2935395,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>271 West</name>
+      <description>Farsta to Skärholmen</description>
+      <styleUrl>#line-000000-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          17.9023009,59.2742539,0
+          18.0919125,59.2428599,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>222 East</name>
+      <description>Nacka to T-centralen</description>
+      <styleUrl>#line-000000-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          18.1647739,59.3100161,0
+          18.0566442,59.3312336,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>73 North</name>
+      <description>Globen to T-centralen</description>
+      <styleUrl>#line-000000-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          18.0830361,59.2935395,0
+          18.0566442,59.3312336,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>75 East</name>
+      <description>Nacka to Globen</description>
+      <styleUrl>#line-000000-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          18.1647739,59.3100161,0
+          18.0830361,59.2935395,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>275 South</name>
+      <description>Välligby to Västberga</description>
+      <styleUrl>#line-000000-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          17.8691434,59.3670813,0
+          18.0296456,59.2993696,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>E4 South</name>
+      <description>Sollentuna to Bergshamra</description>
+      <styleUrl>#line-000000-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          17.950916,59.4304973,0
+          18.0262482,59.3804425,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>265 West</name>
+      <description>Solentuna to Täby</description>
+      <styleUrl>#line-000000-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          17.950916,59.4304973,0
+          18.0703299,59.4419,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>275 North</name>
+      <description>Vällingby to Sollentuna</description>
+      <styleUrl>#line-000000-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          17.8691434,59.3670813,0
+          17.950916,59.4304973,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>E20 South</name>
+      <description>Bergsharma to Västberga</description>
+      <styleUrl>#line-000000-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          18.0262482,59.3804425,0
+          18.0296456,59.2993696,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>
