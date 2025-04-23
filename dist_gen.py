@@ -15,6 +15,7 @@ def estimate_capacity_from_name(name):
 
 # Path to your KML
 kml_path = 'Main Edges.kml'
+nodes_path = 'Nodes.kml'
 
 # Parse KML
 tree = ET.parse(kml_path)
@@ -22,6 +23,22 @@ root = tree.getroot()
 ns = {'kml': 'http://www.opengis.net/kml/2.2'}
 placemarks = root.findall('.//kml:Placemark', ns)
 
+rows = []
+# Parse Nodes.kml to create a coordinate-to-name mapping
+tree_nodes = ET.parse(nodes_path)
+root_nodes = tree_nodes.getroot()
+ns_nodes = {'kml': 'http://www.opengis.net/kml/2.2'}
+
+coord_to_name = {}
+for pm in root_nodes.findall('.//kml:Placemark', ns_nodes):
+    name_elem = pm.find('kml:name', ns_nodes)
+    coord_elem = pm.find('.//kml:coordinates', ns_nodes)
+    if name_elem is not None and coord_elem is not None:
+        name = name_elem.text
+        lon, lat, *_ = map(float, coord_elem.text.strip().split(','))
+        coord_to_name[(round(lat, 5), round(lon, 5))] = name
+
+# Updated rows appending with origin and dest names
 rows = []
 for pm in placemarks:
     line = pm.find('.//kml:LineString/kml:coordinates', ns)
@@ -33,20 +50,26 @@ for pm in placemarks:
     ]
     origin, dest = coords[0], coords[-1]
 
-    # OSRM API call
+    # OSRM API
     url = f"http://router.project-osrm.org/route/v1/driving/{origin[1]},{origin[0]};{dest[1]},{dest[0]}?overview=false"
     resp = requests.get(url)
     resp.raise_for_status()
     leg = resp.json()['routes'][0]['legs'][0]
 
+    # Round to match node precision
+    origin_rounded = (round(origin[0], 5), round(origin[1], 5))
+    dest_rounded = (round(dest[0], 5), round(dest[1], 5))
+
     rows.append({
         'edge_name': pm.find('kml:name', ns).text or '',
         'distance_m': leg['distance'],
-        'duration_s': leg['duration']
+        'duration_s': leg['duration'],
+        'origin_name': coord_to_name.get(origin_rounded, 'Unknown'),
+        'dest_name': coord_to_name.get(dest_rounded, 'Unknown')
     })
     time.sleep(0.5)
 
-# Build DataFrame
+# Build final DataFrame
 df = pd.DataFrame(rows)
 df['distance_km']   = df['distance_m'] / 1000
 df['duration_min']  = df['duration_s'] / 60
@@ -54,6 +77,6 @@ df['avg_speed_kmh'] = df['distance_km'] / (df['duration_min'] / 60)
 df['capacity_veh_per_hr'] = df['edge_name'].apply(estimate_capacity_from_name)
 
 # Output
-print(df[['edge_name','distance_km','duration_min','avg_speed_kmh']])
+print(df[['edge_name','origin_name','dest_name','distance_km','duration_min','avg_speed_kmh']])
 df.to_csv('edge_distances_osrm.csv', index=False)
 print("Saved to edge_distances_osrm.csv")
