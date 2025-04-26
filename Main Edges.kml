@@ -217,7 +217,7 @@
       </LineString>
     </Placemark>
     <Placemark>
-      <name>E20 South</name>
+      <name>E20 North</name>
       <description>Bergsharma to Västberga</description>
       <styleUrl>#line-000000-1200</styleUrl>
       <LineString>
