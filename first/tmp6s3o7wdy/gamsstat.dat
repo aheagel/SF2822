@@ -1,0 +1,54 @@
+=1
+=2
+=0IBM ILOG CPLEX   49.4.0 6fb2fe8b Apr 6, 2025           LEG x86 64bit/Linux    
+=1
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+=2
+=1
+--- GMO setup time: 0.00s
+=2
+=1
+--- Space for names approximately 0.03 Mb
+=2
+=1
+--- Use option 'names no' to turn use of names off
+=2
+=1
+--- GMO memory 0.56 Mb (peak 0.56 Mb)
+=2
+=1
+--- Dictionary memory 0.00 Mb
+=2
+=1
+--- Cplex 22.1.2.0 link memory 0.01 Mb (peak 0.05 Mb)
+=2
+=1
+--- Starting Cplex
+=2
+=C
+Version identifier: 22.1.2.0 | 2024-11-26 | 0edbb82fd
+CPXPARAM_Advance                                 0
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Pool_Capacity                       0
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 11 rows and 23 columns.
+Reduced LP has 110 rows, 352 columns, and 704 nonzeros.
+Presolve time = 0.00 sec. (0.30 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             3.855134
+Iteration:    62   Dual objective     =            18.756988
+Removing shift (1).
+=C
+=1
+--- LP status (1): optimal.
+=2
+=1
+--- Cplex Time: 0.00sec (det. 0.63 ticks)
+
+=2
+=C
+=COptimal solution found
+=CObjective:           19.025200
+=C

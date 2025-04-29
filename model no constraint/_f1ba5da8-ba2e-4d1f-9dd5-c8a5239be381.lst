@@ -1,0 +1,1549 @@
+GAMS 49.4.0  6fb2fe8b Apr 6, 2025           LEX-LEG x86 64bit/Linux - 04/29/25 15:06:01 Page 1
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+C o m p i l a t i o n
+
+
+  32  Model LP / flow_parity,LP_objective /;
+  33  solve LP using MIP MIN LP_objective_variable
+  34   
+
+
+COMPILATION TIME     =        0.000 SECONDS      3 MB  49.4.0 6fb2fe8b LEX-LEG
+GAMS 49.4.0  6fb2fe8b Apr 6, 2025           LEX-LEG x86 64bit/Linux - 04/29/25 15:06:01 Page 2
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+Equation Listing    SOLVE LP Using MIP From line 36
+
+
+---- flow_parity  =E=  Flow parity equation
+
+flow_parity(Farsta Shopping Centre,Farsta Shopping Centre)..  road_util(Farsta Shopping Centre,Skärholmen,Farsta Shopping Centre) + road_util(Farsta Shopping Centre,Avicii Arena,Farsta Shopping Centre) - road_util(Skärholmen,Farsta Shopping Centre,Farsta Shopping Centre) - road_util(Avicii Arena,Farsta Shopping Centre,Farsta Shopping Centre) =E= 15130 ; (LHS = 0, INFES = 15130 ****)
+     
+flow_parity(Farsta Shopping Centre,Skärholmen)..  road_util(Farsta Shopping Centre,Skärholmen,Skärholmen) + road_util(Farsta Shopping Centre,Avicii Arena,Skärholmen) - road_util(Skärholmen,Farsta Shopping Centre,Skärholmen) - road_util(Avicii Arena,Farsta Shopping Centre,Skärholmen) =E= -93 ; (LHS = 0, INFES = 93 ****)
+     
+flow_parity(Farsta Shopping Centre,Vällingby)..  road_util(Farsta Shopping Centre,Skärholmen,Vällingby) + road_util(Farsta Shopping Centre,Avicii Arena,Vällingby) - road_util(Skärholmen,Farsta Shopping Centre,Vällingby) - road_util(Avicii Arena,Farsta Shopping Centre,Vällingby) =E= -197 ; (LHS = 0, INFES = 197 ****)
+     
+flow_parity(Farsta Shopping Centre,Täby)..  road_util(Farsta Shopping Centre,Skärholmen,Täby) + road_util(Farsta Shopping Centre,Avicii Arena,Täby) - road_util(Skärholmen,Farsta Shopping Centre,Täby) - road_util(Avicii Arena,Farsta Shopping Centre,Täby) =E= -215 ; (LHS = 0, INFES = 215 ****)
+     
+flow_parity(Farsta Shopping Centre,Lidingö)..  road_util(Farsta Shopping Centre,Skärholmen,Lidingö) + road_util(Farsta Shopping Centre,Avicii Arena,Lidingö) - road_util(Skärholmen,Farsta Shopping Centre,Lidingö) - road_util(Avicii Arena,Farsta Shopping Centre,Lidingö) =E= -133 ; (LHS = 0, INFES = 133 ****)
+     
+flow_parity(Farsta Shopping Centre,Nacka Forum)..  road_util(Farsta Shopping Centre,Skärholmen,Nacka Forum) + road_util(Farsta Shopping Centre,Avicii Arena,Nacka Forum) - road_util(Skärholmen,Farsta Shopping Centre,Nacka Forum) - road_util(Avicii Arena,Farsta Shopping Centre,Nacka Forum) =E= -307 ; (LHS = 0, INFES = 307 ****)
+     
+flow_parity(Farsta Shopping Centre,Sollentuna)..  road_util(Farsta Shopping Centre,Skärholmen,Sollentuna) + road_util(Farsta Shopping Centre,Avicii Arena,Sollentuna) - road_util(Skärholmen,Farsta Shopping Centre,Sollentuna) - road_util(Avicii Arena,Farsta Shopping Centre,Sollentuna) =E= -211 ; (LHS = 0, INFES = 211 ****)
+     
+flow_parity(Farsta Shopping Centre,Bergshamra)..  road_util(Farsta Shopping Centre,Skärholmen,Bergshamra) + road_util(Farsta Shopping Centre,Avicii Arena,Bergshamra) - road_util(Skärholmen,Farsta Shopping Centre,Bergshamra) - road_util(Avicii Arena,Farsta Shopping Centre,Bergshamra) =E= -20 ; (LHS = 0, INFES = 20 ****)
+     
+flow_parity(Farsta Shopping Centre,Avicii Arena)..  road_util(Farsta Shopping Centre,Skärholmen,Avicii Arena) + road_util(Farsta Shopping Centre,Avicii Arena,Avicii Arena) - road_util(Skärholmen,Farsta Shopping Centre,Avicii Arena) - road_util(Avicii Arena,Farsta Shopping Centre,Avicii Arena) =E= -196 ; (LHS = 0, INFES = 196 ****)
+     
+flow_parity(Farsta Shopping Centre,Årstaberg)..  road_util(Farsta Shopping Centre,Skärholmen,Årstaberg) + road_util(Farsta Shopping Centre,Avicii Arena,Årstaberg) - road_util(Skärholmen,Farsta Shopping Centre,Årstaberg) - road_util(Avicii Arena,Farsta Shopping Centre,Årstaberg) =E= -34 ; (LHS = 0, INFES = 34 ****)
+     
+flow_parity(Farsta Shopping Centre,T-Centralen)..  road_util(Farsta Shopping Centre,Skärholmen,T-Centralen) + road_util(Farsta Shopping Centre,Avicii Arena,T-Centralen) - road_util(Skärholmen,Farsta Shopping Centre,T-Centralen) - road_util(Avicii Arena,Farsta Shopping Centre,T-Centralen) =E= -1007 ; (LHS = 0, INFES = 1007 ****)
+     
+flow_parity(Skärholmen,Farsta Shopping Centre)..  - road_util(Farsta Shopping Centre,Skärholmen,Farsta Shopping Centre) + road_util(Skärholmen,Farsta Shopping Centre,Farsta Shopping Centre) + road_util(Skärholmen,Årstaberg,Farsta Shopping Centre) - road_util(Årstaberg,Skärholmen,Farsta Shopping Centre) =E= -168 ; (LHS = 0, INFES = 168 ****)
+     
+flow_parity(Skärholmen,Skärholmen)..  - road_util(Farsta Shopping Centre,Skärholmen,Skärholmen) + road_util(Skärholmen,Farsta Shopping Centre,Skärholmen) + road_util(Skärholmen,Årstaberg,Skärholmen) - road_util(Årstaberg,Skärholmen,Skärholmen) =E= 8415 ; (LHS = 0, INFES = 8415 ****)
+     
+flow_parity(Skärholmen,Vällingby)..  - road_util(Farsta Shopping Centre,Skärholmen,Vällingby) + road_util(Skärholmen,Farsta Shopping Centre,Vällingby) + road_util(Skärholmen,Årstaberg,Vällingby) - road_util(Årstaberg,Skärholmen,Vällingby) =E= -197 ; (LHS = 0, INFES = 197 ****)
+     
+flow_parity(Skärholmen,Täby)..  - road_util(Farsta Shopping Centre,Skärholmen,Täby) + road_util(Skärholmen,Farsta Shopping Centre,Täby) + road_util(Skärholmen,Årstaberg,Täby) - road_util(Årstaberg,Skärholmen,Täby) =E= -215 ; (LHS = 0, INFES = 215 ****)
+     
+flow_parity(Skärholmen,Lidingö)..  - road_util(Farsta Shopping Centre,Skärholmen,Lidingö) + road_util(Skärholmen,Farsta Shopping Centre,Lidingö) + road_util(Skärholmen,Årstaberg,Lidingö) - road_util(Årstaberg,Skärholmen,Lidingö) =E= -133 ; (LHS = 0, INFES = 133 ****)
+     
+flow_parity(Skärholmen,Nacka Forum)..  - road_util(Farsta Shopping Centre,Skärholmen,Nacka Forum) + road_util(Skärholmen,Farsta Shopping Centre,Nacka Forum) + road_util(Skärholmen,Årstaberg,Nacka Forum) - road_util(Årstaberg,Skärholmen,Nacka Forum) =E= -307 ; (LHS = 0, INFES = 307 ****)
+     
+flow_parity(Skärholmen,Sollentuna)..  - road_util(Farsta Shopping Centre,Skärholmen,Sollentuna) + road_util(Skärholmen,Farsta Shopping Centre,Sollentuna) + road_util(Skärholmen,Årstaberg,Sollentuna) - road_util(Årstaberg,Skärholmen,Sollentuna) =E= -211 ; (LHS = 0, INFES = 211 ****)
+     
+flow_parity(Skärholmen,Bergshamra)..  - road_util(Farsta Shopping Centre,Skärholmen,Bergshamra) + road_util(Skärholmen,Farsta Shopping Centre,Bergshamra) + road_util(Skärholmen,Årstaberg,Bergshamra) - road_util(Årstaberg,Skärholmen,Bergshamra) =E= -20 ; (LHS = 0, INFES = 20 ****)
+     
+flow_parity(Skärholmen,Avicii Arena)..  - road_util(Farsta Shopping Centre,Skärholmen,Avicii Arena) + road_util(Skärholmen,Farsta Shopping Centre,Avicii Arena) + road_util(Skärholmen,Årstaberg,Avicii Arena) - road_util(Årstaberg,Skärholmen,Avicii Arena) =E= -196 ; (LHS = 0, INFES = 196 ****)
+     
+flow_parity(Skärholmen,Årstaberg)..  - road_util(Farsta Shopping Centre,Skärholmen,Årstaberg) + road_util(Skärholmen,Farsta Shopping Centre,Årstaberg) + road_util(Skärholmen,Årstaberg,Årstaberg) - road_util(Årstaberg,Skärholmen,Årstaberg) =E= -34 ; (LHS = 0, INFES = 34 ****)
+     
+flow_parity(Skärholmen,T-Centralen)..  - road_util(Farsta Shopping Centre,Skärholmen,T-Centralen) + road_util(Skärholmen,Farsta Shopping Centre,T-Centralen) + road_util(Skärholmen,Årstaberg,T-Centralen) - road_util(Årstaberg,Skärholmen,T-Centralen) =E= -1007 ; (LHS = 0, INFES = 1007 ****)
+     
+flow_parity(Vällingby,Farsta Shopping Centre)..  road_util(Vällingby,Sollentuna,Farsta Shopping Centre) + road_util(Vällingby,Bergshamra,Farsta Shopping Centre) + road_util(Vällingby,Årstaberg,Farsta Shopping Centre) + road_util(Vällingby,T-Centralen,Farsta Shopping Centre) - road_util(Sollentuna,Vällingby,Farsta Shopping Centre) - road_util(Bergshamra,Vällingby,Farsta Shopping Centre) - road_util(Årstaberg,Vällingby,Farsta Shopping Centre) - road_util(T-Centralen,Vällingby,Farsta Shopping Centre) =E= -168 ; (LHS = 0, INFES = 168 ****)
+     
+flow_parity(Vällingby,Skärholmen)..  road_util(Vällingby,Sollentuna,Skärholmen) + road_util(Vällingby,Bergshamra,Skärholmen) + road_util(Vällingby,Årstaberg,Skärholmen) + road_util(Vällingby,T-Centralen,Skärholmen) - road_util(Sollentuna,Vällingby,Skärholmen) - road_util(Bergshamra,Vällingby,Skärholmen) - road_util(Årstaberg,Vällingby,Skärholmen) - road_util(T-Centralen,Vällingby,Skärholmen) =E= -93 ; (LHS = 0, INFES = 93 ****)
+     
+flow_parity(Vällingby,Vällingby)..  road_util(Vällingby,Sollentuna,Vällingby) + road_util(Vällingby,Bergshamra,Vällingby) + road_util(Vällingby,Årstaberg,Vällingby) + road_util(Vällingby,T-Centralen,Vällingby) - road_util(Sollentuna,Vällingby,Vällingby) - road_util(Bergshamra,Vällingby,Vällingby) - road_util(Årstaberg,Vällingby,Vällingby) - road_util(T-Centralen,Vällingby,Vällingby) =E= 17760 ; (LHS = 0, INFES = 17760 ****)
+     
+flow_parity(Vällingby,Täby)..  road_util(Vällingby,Sollentuna,Täby) + road_util(Vällingby,Bergshamra,Täby) + road_util(Vällingby,Årstaberg,Täby) + road_util(Vällingby,T-Centralen,Täby) - road_util(Sollentuna,Vällingby,Täby) - road_util(Bergshamra,Vällingby,Täby) - road_util(Årstaberg,Vällingby,Täby) - road_util(T-Centralen,Vällingby,Täby) =E= -215 ; (LHS = 0, INFES = 215 ****)
+     
+flow_parity(Vällingby,Lidingö)..  road_util(Vällingby,Sollentuna,Lidingö) + road_util(Vällingby,Bergshamra,Lidingö) + road_util(Vällingby,Årstaberg,Lidingö) + road_util(Vällingby,T-Centralen,Lidingö) - road_util(Sollentuna,Vällingby,Lidingö) - road_util(Bergshamra,Vällingby,Lidingö) - road_util(Årstaberg,Vällingby,Lidingö) - road_util(T-Centralen,Vällingby,Lidingö) =E= -133 ; (LHS = 0, INFES = 133 ****)
+     
+flow_parity(Vällingby,Nacka Forum)..  road_util(Vällingby,Sollentuna,Nacka Forum) + road_util(Vällingby,Bergshamra,Nacka Forum) + road_util(Vällingby,Årstaberg,Nacka Forum) + road_util(Vällingby,T-Centralen,Nacka Forum) - road_util(Sollentuna,Vällingby,Nacka Forum) - road_util(Bergshamra,Vällingby,Nacka Forum) - road_util(Årstaberg,Vällingby,Nacka Forum) - road_util(T-Centralen,Vällingby,Nacka Forum) =E= -307 ; (LHS = 0, INFES = 307 ****)
+     
+flow_parity(Vällingby,Sollentuna)..  road_util(Vällingby,Sollentuna,Sollentuna) + road_util(Vällingby,Bergshamra,Sollentuna) + road_util(Vällingby,Årstaberg,Sollentuna) + road_util(Vällingby,T-Centralen,Sollentuna) - road_util(Sollentuna,Vällingby,Sollentuna) - road_util(Bergshamra,Vällingby,Sollentuna) - road_util(Årstaberg,Vällingby,Sollentuna) - road_util(T-Centralen,Vällingby,Sollentuna) =E= -211 ; (LHS = 0, INFES = 211 ****)
+     
+flow_parity(Vällingby,Bergshamra)..  road_util(Vällingby,Sollentuna,Bergshamra) + road_util(Vällingby,Bergshamra,Bergshamra) + road_util(Vällingby,Årstaberg,Bergshamra) + road_util(Vällingby,T-Centralen,Bergshamra) - road_util(Sollentuna,Vällingby,Bergshamra) - road_util(Bergshamra,Vällingby,Bergshamra) - road_util(Årstaberg,Vällingby,Bergshamra) - road_util(T-Centralen,Vällingby,Bergshamra) =E= -20 ; (LHS = 0, INFES = 20 ****)
+     
+flow_parity(Vällingby,Avicii Arena)..  road_util(Vällingby,Sollentuna,Avicii Arena) + road_util(Vällingby,Bergshamra,Avicii Arena) + road_util(Vällingby,Årstaberg,Avicii Arena) + road_util(Vällingby,T-Centralen,Avicii Arena) - road_util(Sollentuna,Vällingby,Avicii Arena) - road_util(Bergshamra,Vällingby,Avicii Arena) - road_util(Årstaberg,Vällingby,Avicii Arena) - road_util(T-Centralen,Vällingby,Avicii Arena) =E= -196 ; (LHS = 0, INFES = 196 ****)
+     
+flow_parity(Vällingby,Årstaberg)..  road_util(Vällingby,Sollentuna,Årstaberg) + road_util(Vällingby,Bergshamra,Årstaberg) + road_util(Vällingby,Årstaberg,Årstaberg) + road_util(Vällingby,T-Centralen,Årstaberg) - road_util(Sollentuna,Vällingby,Årstaberg) - road_util(Bergshamra,Vällingby,Årstaberg) - road_util(Årstaberg,Vällingby,Årstaberg) - road_util(T-Centralen,Vällingby,Årstaberg) =E= -34 ; (LHS = 0, INFES = 34 ****)
+     
+flow_parity(Vällingby,T-Centralen)..  road_util(Vällingby,Sollentuna,T-Centralen) + road_util(Vällingby,Bergshamra,T-Centralen) + road_util(Vällingby,Årstaberg,T-Centralen) + road_util(Vällingby,T-Centralen,T-Centralen) - road_util(Sollentuna,Vällingby,T-Centralen) - road_util(Bergshamra,Vällingby,T-Centralen) - road_util(Årstaberg,Vällingby,T-Centralen) - road_util(T-Centralen,Vällingby,T-Centralen) =E= -1007 ; (LHS = 0, INFES = 1007 ****)
+     
+flow_parity(Täby,Farsta Shopping Centre)..  road_util(Täby,Sollentuna,Farsta Shopping Centre) + road_util(Täby,Bergshamra,Farsta Shopping Centre) - road_util(Sollentuna,Täby,Farsta Shopping Centre) - road_util(Bergshamra,Täby,Farsta Shopping Centre) =E= -168 ; (LHS = 0, INFES = 168 ****)
+     
+flow_parity(Täby,Skärholmen)..  road_util(Täby,Sollentuna,Skärholmen) + road_util(Täby,Bergshamra,Skärholmen) - road_util(Sollentuna,Täby,Skärholmen) - road_util(Bergshamra,Täby,Skärholmen) =E= -93 ; (LHS = 0, INFES = 93 ****)
+     
+flow_parity(Täby,Vällingby)..  road_util(Täby,Sollentuna,Vällingby) + road_util(Täby,Bergshamra,Vällingby) - road_util(Sollentuna,Täby,Vällingby) - road_util(Bergshamra,Täby,Vällingby) =E= -197 ; (LHS = 0, INFES = 197 ****)
+     
+flow_parity(Täby,Täby)..  road_util(Täby,Sollentuna,Täby) + road_util(Täby,Bergshamra,Täby) - road_util(Sollentuna,Täby,Täby) - road_util(Bergshamra,Täby,Täby) =E= 19436 ; (LHS = 0, INFES = 19436 ****)
+     
+flow_parity(Täby,Lidingö)..  road_util(Täby,Sollentuna,Lidingö) + road_util(Täby,Bergshamra,Lidingö) - road_util(Sollentuna,Täby,Lidingö) - road_util(Bergshamra,Täby,Lidingö) =E= -133 ; (LHS = 0, INFES = 133 ****)
+     
+flow_parity(Täby,Nacka Forum)..  road_util(Täby,Sollentuna,Nacka Forum) + road_util(Täby,Bergshamra,Nacka Forum) - road_util(Sollentuna,Täby,Nacka Forum) - road_util(Bergshamra,Täby,Nacka Forum) =E= -307 ; (LHS = 0, INFES = 307 ****)
+     
+flow_parity(Täby,Sollentuna)..  road_util(Täby,Sollentuna,Sollentuna) + road_util(Täby,Bergshamra,Sollentuna) - road_util(Sollentuna,Täby,Sollentuna) - road_util(Bergshamra,Täby,Sollentuna) =E= -211 ; (LHS = 0, INFES = 211 ****)
+     
+flow_parity(Täby,Bergshamra)..  road_util(Täby,Sollentuna,Bergshamra) + road_util(Täby,Bergshamra,Bergshamra) - road_util(Sollentuna,Täby,Bergshamra) - road_util(Bergshamra,Täby,Bergshamra) =E= -20 ; (LHS = 0, INFES = 20 ****)
+     
+flow_parity(Täby,Avicii Arena)..  road_util(Täby,Sollentuna,Avicii Arena) + road_util(Täby,Bergshamra,Avicii Arena) - road_util(Sollentuna,Täby,Avicii Arena) - road_util(Bergshamra,Täby,Avicii Arena) =E= -196 ; (LHS = 0, INFES = 196 ****)
+     
+flow_parity(Täby,Årstaberg)..  road_util(Täby,Sollentuna,Årstaberg) + road_util(Täby,Bergshamra,Årstaberg) - road_util(Sollentuna,Täby,Årstaberg) - road_util(Bergshamra,Täby,Årstaberg) =E= -34 ; (LHS = 0, INFES = 34 ****)
+     
+flow_parity(Täby,T-Centralen)..  road_util(Täby,Sollentuna,T-Centralen) + road_util(Täby,Bergshamra,T-Centralen) - road_util(Sollentuna,Täby,T-Centralen) - road_util(Bergshamra,Täby,T-Centralen) =E= -1007 ; (LHS = 0, INFES = 1007 ****)
+     
+flow_parity(Lidingö,Farsta Shopping Centre)..  road_util(Lidingö,T-Centralen,Farsta Shopping Centre) - road_util(T-Centralen,Lidingö,Farsta Shopping Centre) =E= -168 ; (LHS = 0, INFES = 168 ****)
+     
+flow_parity(Lidingö,Skärholmen)..  road_util(Lidingö,T-Centralen,Skärholmen) - road_util(T-Centralen,Lidingö,Skärholmen) =E= -93 ; (LHS = 0, INFES = 93 ****)
+     
+flow_parity(Lidingö,Vällingby)..  road_util(Lidingö,T-Centralen,Vällingby) - road_util(T-Centralen,Lidingö,Vällingby) =E= -197 ; (LHS = 0, INFES = 197 ****)
+     
+flow_parity(Lidingö,Täby)..  road_util(Lidingö,T-Centralen,Täby) - road_util(T-Centralen,Lidingö,Täby) =E= -215 ; (LHS = 0, INFES = 215 ****)
+     
+flow_parity(Lidingö,Lidingö)..  road_util(Lidingö,T-Centralen,Lidingö) - road_util(T-Centralen,Lidingö,Lidingö) =E= 12040 ; (LHS = 0, INFES = 12040 ****)
+     
+flow_parity(Lidingö,Nacka Forum)..  road_util(Lidingö,T-Centralen,Nacka Forum) - road_util(T-Centralen,Lidingö,Nacka Forum) =E= -307 ; (LHS = 0, INFES = 307 ****)
+     
+flow_parity(Lidingö,Sollentuna)..  road_util(Lidingö,T-Centralen,Sollentuna) - road_util(T-Centralen,Lidingö,Sollentuna) =E= -211 ; (LHS = 0, INFES = 211 ****)
+     
+flow_parity(Lidingö,Bergshamra)..  road_util(Lidingö,T-Centralen,Bergshamra) - road_util(T-Centralen,Lidingö,Bergshamra) =E= -20 ; (LHS = 0, INFES = 20 ****)
+     
+flow_parity(Lidingö,Avicii Arena)..  road_util(Lidingö,T-Centralen,Avicii Arena) - road_util(T-Centralen,Lidingö,Avicii Arena) =E= -196 ; (LHS = 0, INFES = 196 ****)
+     
+flow_parity(Lidingö,Årstaberg)..  road_util(Lidingö,T-Centralen,Årstaberg) - road_util(T-Centralen,Lidingö,Årstaberg) =E= -34 ; (LHS = 0, INFES = 34 ****)
+     
+flow_parity(Lidingö,T-Centralen)..  road_util(Lidingö,T-Centralen,T-Centralen) - road_util(T-Centralen,Lidingö,T-Centralen) =E= -1007 ; (LHS = 0, INFES = 1007 ****)
+     
+flow_parity(Nacka Forum,Farsta Shopping Centre)..  road_util(Nacka Forum,Avicii Arena,Farsta Shopping Centre) + road_util(Nacka Forum,T-Centralen,Farsta Shopping Centre) - road_util(Avicii Arena,Nacka Forum,Farsta Shopping Centre) - road_util(T-Centralen,Nacka Forum,Farsta Shopping Centre) =E= -168 ; (LHS = 0, INFES = 168 ****)
+     
+flow_parity(Nacka Forum,Skärholmen)..  road_util(Nacka Forum,Avicii Arena,Skärholmen) + road_util(Nacka Forum,T-Centralen,Skärholmen) - road_util(Avicii Arena,Nacka Forum,Skärholmen) - road_util(T-Centralen,Nacka Forum,Skärholmen) =E= -93 ; (LHS = 0, INFES = 93 ****)
+     
+flow_parity(Nacka Forum,Vällingby)..  road_util(Nacka Forum,Avicii Arena,Vällingby) + road_util(Nacka Forum,T-Centralen,Vällingby) - road_util(Avicii Arena,Nacka Forum,Vällingby) - road_util(T-Centralen,Nacka Forum,Vällingby) =E= -197 ; (LHS = 0, INFES = 197 ****)
+     
+flow_parity(Nacka Forum,Täby)..  road_util(Nacka Forum,Avicii Arena,Täby) + road_util(Nacka Forum,T-Centralen,Täby) - road_util(Avicii Arena,Nacka Forum,Täby) - road_util(T-Centralen,Nacka Forum,Täby) =E= -215 ; (LHS = 0, INFES = 215 ****)
+     
+flow_parity(Nacka Forum,Lidingö)..  road_util(Nacka Forum,Avicii Arena,Lidingö) + road_util(Nacka Forum,T-Centralen,Lidingö) - road_util(Avicii Arena,Nacka Forum,Lidingö) - road_util(T-Centralen,Nacka Forum,Lidingö) =E= -133 ; (LHS = 0, INFES = 133 ****)
+     
+flow_parity(Nacka Forum,Nacka Forum)..  road_util(Nacka Forum,Avicii Arena,Nacka Forum) + road_util(Nacka Forum,T-Centralen,Nacka Forum) - road_util(Avicii Arena,Nacka Forum,Nacka Forum) - road_util(T-Centralen,Nacka Forum,Nacka Forum) =E= 27658 ; (LHS = 0, INFES = 27658 ****)
+     
+flow_parity(Nacka Forum,Sollentuna)..  road_util(Nacka Forum,Avicii Arena,Sollentuna) + road_util(Nacka Forum,T-Centralen,Sollentuna) - road_util(Avicii Arena,Nacka Forum,Sollentuna) - road_util(T-Centralen,Nacka Forum,Sollentuna) =E= -211 ; (LHS = 0, INFES = 211 ****)
+     
+flow_parity(Nacka Forum,Bergshamra)..  road_util(Nacka Forum,Avicii Arena,Bergshamra) + road_util(Nacka Forum,T-Centralen,Bergshamra) - road_util(Avicii Arena,Nacka Forum,Bergshamra) - road_util(T-Centralen,Nacka Forum,Bergshamra) =E= -20 ; (LHS = 0, INFES = 20 ****)
+     
+flow_parity(Nacka Forum,Avicii Arena)..  road_util(Nacka Forum,Avicii Arena,Avicii Arena) + road_util(Nacka Forum,T-Centralen,Avicii Arena) - road_util(Avicii Arena,Nacka Forum,Avicii Arena) - road_util(T-Centralen,Nacka Forum,Avicii Arena) =E= -196 ; (LHS = 0, INFES = 196 ****)
+     
+flow_parity(Nacka Forum,Årstaberg)..  road_util(Nacka Forum,Avicii Arena,Årstaberg) + road_util(Nacka Forum,T-Centralen,Årstaberg) - road_util(Avicii Arena,Nacka Forum,Årstaberg) - road_util(T-Centralen,Nacka Forum,Årstaberg) =E= -34 ; (LHS = 0, INFES = 34 ****)
+     
+flow_parity(Nacka Forum,T-Centralen)..  road_util(Nacka Forum,Avicii Arena,T-Centralen) + road_util(Nacka Forum,T-Centralen,T-Centralen) - road_util(Avicii Arena,Nacka Forum,T-Centralen) - road_util(T-Centralen,Nacka Forum,T-Centralen) =E= -1007 ; (LHS = 0, INFES = 1007 ****)
+     
+flow_parity(Sollentuna,Farsta Shopping Centre)..  - road_util(Vällingby,Sollentuna,Farsta Shopping Centre) - road_util(Täby,Sollentuna,Farsta Shopping Centre) + road_util(Sollentuna,Vällingby,Farsta Shopping Centre) + road_util(Sollentuna,Täby,Farsta Shopping Centre) + road_util(Sollentuna,Bergshamra,Farsta Shopping Centre) - road_util(Bergshamra,Sollentuna,Farsta Shopping Centre) =E= -168 ; (LHS = 0, INFES = 168 ****)
+     
+flow_parity(Sollentuna,Skärholmen)..  - road_util(Vällingby,Sollentuna,Skärholmen) - road_util(Täby,Sollentuna,Skärholmen) + road_util(Sollentuna,Vällingby,Skärholmen) + road_util(Sollentuna,Täby,Skärholmen) + road_util(Sollentuna,Bergshamra,Skärholmen) - road_util(Bergshamra,Sollentuna,Skärholmen) =E= -93 ; (LHS = 0, INFES = 93 ****)
+     
+flow_parity(Sollentuna,Vällingby)..  - road_util(Vällingby,Sollentuna,Vällingby) - road_util(Täby,Sollentuna,Vällingby) + road_util(Sollentuna,Vällingby,Vällingby) + road_util(Sollentuna,Täby,Vällingby) + road_util(Sollentuna,Bergshamra,Vällingby) - road_util(Bergshamra,Sollentuna,Vällingby) =E= -197 ; (LHS = 0, INFES = 197 ****)
+     
+flow_parity(Sollentuna,Täby)..  - road_util(Vällingby,Sollentuna,Täby) - road_util(Täby,Sollentuna,Täby) + road_util(Sollentuna,Vällingby,Täby) + road_util(Sollentuna,Täby,Täby) + road_util(Sollentuna,Bergshamra,Täby) - road_util(Bergshamra,Sollentuna,Täby) =E= -215 ; (LHS = 0, INFES = 215 ****)
+     
+flow_parity(Sollentuna,Lidingö)..  - road_util(Vällingby,Sollentuna,Lidingö) - road_util(Täby,Sollentuna,Lidingö) + road_util(Sollentuna,Vällingby,Lidingö) + road_util(Sollentuna,Täby,Lidingö) + road_util(Sollentuna,Bergshamra,Lidingö) - road_util(Bergshamra,Sollentuna,Lidingö) =E= -133 ; (LHS = 0, INFES = 133 ****)
+     
+flow_parity(Sollentuna,Nacka Forum)..  - road_util(Vällingby,Sollentuna,Nacka Forum) - road_util(Täby,Sollentuna,Nacka Forum) + road_util(Sollentuna,Vällingby,Nacka Forum) + road_util(Sollentuna,Täby,Nacka Forum) + road_util(Sollentuna,Bergshamra,Nacka Forum) - road_util(Bergshamra,Sollentuna,Nacka Forum) =E= -307 ; (LHS = 0, INFES = 307 ****)
+     
+flow_parity(Sollentuna,Sollentuna)..  - road_util(Vällingby,Sollentuna,Sollentuna) - road_util(Täby,Sollentuna,Sollentuna) + road_util(Sollentuna,Vällingby,Sollentuna) + road_util(Sollentuna,Täby,Sollentuna) + road_util(Sollentuna,Bergshamra,Sollentuna) - road_util(Bergshamra,Sollentuna,Sollentuna) =E= 19059 ; (LHS = 0, INFES = 19059 ****)
+     
+flow_parity(Sollentuna,Bergshamra)..  - road_util(Vällingby,Sollentuna,Bergshamra) - road_util(Täby,Sollentuna,Bergshamra) + road_util(Sollentuna,Vällingby,Bergshamra) + road_util(Sollentuna,Täby,Bergshamra) + road_util(Sollentuna,Bergshamra,Bergshamra) - road_util(Bergshamra,Sollentuna,Bergshamra) =E= -20 ; (LHS = 0, INFES = 20 ****)
+     
+flow_parity(Sollentuna,Avicii Arena)..  - road_util(Vällingby,Sollentuna,Avicii Arena) - road_util(Täby,Sollentuna,Avicii Arena) + road_util(Sollentuna,Vällingby,Avicii Arena) + road_util(Sollentuna,Täby,Avicii Arena) + road_util(Sollentuna,Bergshamra,Avicii Arena) - road_util(Bergshamra,Sollentuna,Avicii Arena) =E= -196 ; (LHS = 0, INFES = 196 ****)
+     
+flow_parity(Sollentuna,Årstaberg)..  - road_util(Vällingby,Sollentuna,Årstaberg) - road_util(Täby,Sollentuna,Årstaberg) + road_util(Sollentuna,Vällingby,Årstaberg) + road_util(Sollentuna,Täby,Årstaberg) + road_util(Sollentuna,Bergshamra,Årstaberg) - road_util(Bergshamra,Sollentuna,Årstaberg) =E= -34 ; (LHS = 0, INFES = 34 ****)
+     
+flow_parity(Sollentuna,T-Centralen)..  - road_util(Vällingby,Sollentuna,T-Centralen) - road_util(Täby,Sollentuna,T-Centralen) + road_util(Sollentuna,Vällingby,T-Centralen) + road_util(Sollentuna,Täby,T-Centralen) + road_util(Sollentuna,Bergshamra,T-Centralen) - road_util(Bergshamra,Sollentuna,T-Centralen) =E= -1007 ; (LHS = 0, INFES = 1007 ****)
+     
+flow_parity(Bergshamra,Farsta Shopping Centre)..  - road_util(Vällingby,Bergshamra,Farsta Shopping Centre) - road_util(Täby,Bergshamra,Farsta Shopping Centre) - road_util(Sollentuna,Bergshamra,Farsta Shopping Centre) + road_util(Bergshamra,Vällingby,Farsta Shopping Centre) + road_util(Bergshamra,Täby,Farsta Shopping Centre) + road_util(Bergshamra,Sollentuna,Farsta Shopping Centre) + road_util(Bergshamra,Årstaberg,Farsta Shopping Centre) + road_util(Bergshamra,T-Centralen,Farsta Shopping Centre) - road_util(Årstaberg,Bergshamra,Farsta Shopping Centre) - road_util(T-Centralen,Bergshamra,Farsta Shopping Centre) =E= -168 ; (LHS = 0, INFES = 168 ****)
+     
+flow_parity(Bergshamra,Skärholmen)..  - road_util(Vällingby,Bergshamra,Skärholmen) - road_util(Täby,Bergshamra,Skärholmen) - road_util(Sollentuna,Bergshamra,Skärholmen) + road_util(Bergshamra,Vällingby,Skärholmen) + road_util(Bergshamra,Täby,Skärholmen) + road_util(Bergshamra,Sollentuna,Skärholmen) + road_util(Bergshamra,Årstaberg,Skärholmen) + road_util(Bergshamra,T-Centralen,Skärholmen) - road_util(Årstaberg,Bergshamra,Skärholmen) - road_util(T-Centralen,Bergshamra,Skärholmen) =E= -93 ; (LHS = 0, INFES = 93 ****)
+     
+flow_parity(Bergshamra,Vällingby)..  - road_util(Vällingby,Bergshamra,Vällingby) - road_util(Täby,Bergshamra,Vällingby) - road_util(Sollentuna,Bergshamra,Vällingby) + road_util(Bergshamra,Vällingby,Vällingby) + road_util(Bergshamra,Täby,Vällingby) + road_util(Bergshamra,Sollentuna,Vällingby) + road_util(Bergshamra,Årstaberg,Vällingby) + road_util(Bergshamra,T-Centralen,Vällingby) - road_util(Årstaberg,Bergshamra,Vällingby) - road_util(T-Centralen,Bergshamra,Vällingby) =E= -197 ; (LHS = 0, INFES = 197 ****)
+     
+flow_parity(Bergshamra,Täby)..  - road_util(Vällingby,Bergshamra,Täby) - road_util(Täby,Bergshamra,Täby) - road_util(Sollentuna,Bergshamra,Täby) + road_util(Bergshamra,Vällingby,Täby) + road_util(Bergshamra,Täby,Täby) + road_util(Bergshamra,Sollentuna,Täby) + road_util(Bergshamra,Årstaberg,Täby) + road_util(Bergshamra,T-Centralen,Täby) - road_util(Årstaberg,Bergshamra,Täby) - road_util(T-Centralen,Bergshamra,Täby) =E= -215 ; (LHS = 0, INFES = 215 ****)
+     
+flow_parity(Bergshamra,Lidingö)..  - road_util(Vällingby,Bergshamra,Lidingö) - road_util(Täby,Bergshamra,Lidingö) - road_util(Sollentuna,Bergshamra,Lidingö) + road_util(Bergshamra,Vällingby,Lidingö) + road_util(Bergshamra,Täby,Lidingö) + road_util(Bergshamra,Sollentuna,Lidingö) + road_util(Bergshamra,Årstaberg,Lidingö) + road_util(Bergshamra,T-Centralen,Lidingö) - road_util(Årstaberg,Bergshamra,Lidingö) - road_util(T-Centralen,Bergshamra,Lidingö) =E= -133 ; (LHS = 0, INFES = 133 ****)
+     
+flow_parity(Bergshamra,Nacka Forum)..  - road_util(Vällingby,Bergshamra,Nacka Forum) - road_util(Täby,Bergshamra,Nacka Forum) - road_util(Sollentuna,Bergshamra,Nacka Forum) + road_util(Bergshamra,Vällingby,Nacka Forum) + road_util(Bergshamra,Täby,Nacka Forum) + road_util(Bergshamra,Sollentuna,Nacka Forum) + road_util(Bergshamra,Årstaberg,Nacka Forum) + road_util(Bergshamra,T-Centralen,Nacka Forum) - road_util(Årstaberg,Bergshamra,Nacka Forum) - road_util(T-Centralen,Bergshamra,Nacka Forum) =E= -307 ; (LHS = 0, INFES = 307 ****)
+     
+flow_parity(Bergshamra,Sollentuna)..  - road_util(Vällingby,Bergshamra,Sollentuna) - road_util(Täby,Bergshamra,Sollentuna) - road_util(Sollentuna,Bergshamra,Sollentuna) + road_util(Bergshamra,Vällingby,Sollentuna) + road_util(Bergshamra,Täby,Sollentuna) + road_util(Bergshamra,Sollentuna,Sollentuna) + road_util(Bergshamra,Årstaberg,Sollentuna) + road_util(Bergshamra,T-Centralen,Sollentuna) - road_util(Årstaberg,Bergshamra,Sollentuna) - road_util(T-Centralen,Bergshamra,Sollentuna) =E= -211 ; (LHS = 0, INFES = 211 ****)
+     
+flow_parity(Bergshamra,Bergshamra)..  - road_util(Vällingby,Bergshamra,Bergshamra) - road_util(Täby,Bergshamra,Bergshamra) - road_util(Sollentuna,Bergshamra,Bergshamra) + road_util(Bergshamra,Vällingby,Bergshamra) + road_util(Bergshamra,Täby,Bergshamra) + road_util(Bergshamra,Sollentuna,Bergshamra) + road_util(Bergshamra,Årstaberg,Bergshamra) + road_util(Bergshamra,T-Centralen,Bergshamra) - road_util(Årstaberg,Bergshamra,Bergshamra) - road_util(T-Centralen,Bergshamra,Bergshamra) =E= 1825 ; (LHS = 0, INFES = 1825 ****)
+     
+flow_parity(Bergshamra,Avicii Arena)..  - road_util(Vällingby,Bergshamra,Avicii Arena) - road_util(Täby,Bergshamra,Avicii Arena) - road_util(Sollentuna,Bergshamra,Avicii Arena) + road_util(Bergshamra,Vällingby,Avicii Arena) + road_util(Bergshamra,Täby,Avicii Arena) + road_util(Bergshamra,Sollentuna,Avicii Arena) + road_util(Bergshamra,Årstaberg,Avicii Arena) + road_util(Bergshamra,T-Centralen,Avicii Arena) - road_util(Årstaberg,Bergshamra,Avicii Arena) - road_util(T-Centralen,Bergshamra,Avicii Arena) =E= -196 ; (LHS = 0, INFES = 196 ****)
+     
+flow_parity(Bergshamra,Årstaberg)..  - road_util(Vällingby,Bergshamra,Årstaberg) - road_util(Täby,Bergshamra,Årstaberg) - road_util(Sollentuna,Bergshamra,Årstaberg) + road_util(Bergshamra,Vällingby,Årstaberg) + road_util(Bergshamra,Täby,Årstaberg) + road_util(Bergshamra,Sollentuna,Årstaberg) + road_util(Bergshamra,Årstaberg,Årstaberg) + road_util(Bergshamra,T-Centralen,Årstaberg) - road_util(Årstaberg,Bergshamra,Årstaberg) - road_util(T-Centralen,Bergshamra,Årstaberg) =E= -34 ; (LHS = 0, INFES = 34 ****)
+     
+flow_parity(Bergshamra,T-Centralen)..  - road_util(Vällingby,Bergshamra,T-Centralen) - road_util(Täby,Bergshamra,T-Centralen) - road_util(Sollentuna,Bergshamra,T-Centralen) + road_util(Bergshamra,Vällingby,T-Centralen) + road_util(Bergshamra,Täby,T-Centralen) + road_util(Bergshamra,Sollentuna,T-Centralen) + road_util(Bergshamra,Årstaberg,T-Centralen) + road_util(Bergshamra,T-Centralen,T-Centralen) - road_util(Årstaberg,Bergshamra,T-Centralen) - road_util(T-Centralen,Bergshamra,T-Centralen) =E= -1007 ; (LHS = 0, INFES = 1007 ****)
+     
+flow_parity(Avicii Arena,Farsta Shopping Centre)..  - road_util(Farsta Shopping Centre,Avicii Arena,Farsta Shopping Centre) - road_util(Nacka Forum,Avicii Arena,Farsta Shopping Centre) + road_util(Avicii Arena,Farsta Shopping Centre,Farsta Shopping Centre) + road_util(Avicii Arena,Nacka Forum,Farsta Shopping Centre) + road_util(Avicii Arena,Årstaberg,Farsta Shopping Centre) + road_util(Avicii Arena,T-Centralen,Farsta Shopping Centre) - road_util(Årstaberg,Avicii Arena,Farsta Shopping Centre) - road_util(T-Centralen,Avicii Arena,Farsta Shopping Centre) =E= -168 ; (LHS = 0, INFES = 168 ****)
+     
+flow_parity(Avicii Arena,Skärholmen)..  - road_util(Farsta Shopping Centre,Avicii Arena,Skärholmen) - road_util(Nacka Forum,Avicii Arena,Skärholmen) + road_util(Avicii Arena,Farsta Shopping Centre,Skärholmen) + road_util(Avicii Arena,Nacka Forum,Skärholmen) + road_util(Avicii Arena,Årstaberg,Skärholmen) + road_util(Avicii Arena,T-Centralen,Skärholmen) - road_util(Årstaberg,Avicii Arena,Skärholmen) - road_util(T-Centralen,Avicii Arena,Skärholmen) =E= -93 ; (LHS = 0, INFES = 93 ****)
+     
+flow_parity(Avicii Arena,Vällingby)..  - road_util(Farsta Shopping Centre,Avicii Arena,Vällingby) - road_util(Nacka Forum,Avicii Arena,Vällingby) + road_util(Avicii Arena,Farsta Shopping Centre,Vällingby) + road_util(Avicii Arena,Nacka Forum,Vällingby) + road_util(Avicii Arena,Årstaberg,Vällingby) + road_util(Avicii Arena,T-Centralen,Vällingby) - road_util(Årstaberg,Avicii Arena,Vällingby) - road_util(T-Centralen,Avicii Arena,Vällingby) =E= -197 ; (LHS = 0, INFES = 197 ****)
+     
+flow_parity(Avicii Arena,Täby)..  - road_util(Farsta Shopping Centre,Avicii Arena,Täby) - road_util(Nacka Forum,Avicii Arena,Täby) + road_util(Avicii Arena,Farsta Shopping Centre,Täby) + road_util(Avicii Arena,Nacka Forum,Täby) + road_util(Avicii Arena,Årstaberg,Täby) + road_util(Avicii Arena,T-Centralen,Täby) - road_util(Årstaberg,Avicii Arena,Täby) - road_util(T-Centralen,Avicii Arena,Täby) =E= -215 ; (LHS = 0, INFES = 215 ****)
+     
+flow_parity(Avicii Arena,Lidingö)..  - road_util(Farsta Shopping Centre,Avicii Arena,Lidingö) - road_util(Nacka Forum,Avicii Arena,Lidingö) + road_util(Avicii Arena,Farsta Shopping Centre,Lidingö) + road_util(Avicii Arena,Nacka Forum,Lidingö) + road_util(Avicii Arena,Årstaberg,Lidingö) + road_util(Avicii Arena,T-Centralen,Lidingö) - road_util(Årstaberg,Avicii Arena,Lidingö) - road_util(T-Centralen,Avicii Arena,Lidingö) =E= -133 ; (LHS = 0, INFES = 133 ****)
+     
+flow_parity(Avicii Arena,Nacka Forum)..  - road_util(Farsta Shopping Centre,Avicii Arena,Nacka Forum) - road_util(Nacka Forum,Avicii Arena,Nacka Forum) + road_util(Avicii Arena,Farsta Shopping Centre,Nacka Forum) + road_util(Avicii Arena,Nacka Forum,Nacka Forum) + road_util(Avicii Arena,Årstaberg,Nacka Forum) + road_util(Avicii Arena,T-Centralen,Nacka Forum) - road_util(Årstaberg,Avicii Arena,Nacka Forum) - road_util(T-Centralen,Avicii Arena,Nacka Forum) =E= -307 ; (LHS = 0, INFES = 307 ****)
+     
+flow_parity(Avicii Arena,Sollentuna)..  - road_util(Farsta Shopping Centre,Avicii Arena,Sollentuna) - road_util(Nacka Forum,Avicii Arena,Sollentuna) + road_util(Avicii Arena,Farsta Shopping Centre,Sollentuna) + road_util(Avicii Arena,Nacka Forum,Sollentuna) + road_util(Avicii Arena,Årstaberg,Sollentuna) + road_util(Avicii Arena,T-Centralen,Sollentuna) - road_util(Årstaberg,Avicii Arena,Sollentuna) - road_util(T-Centralen,Avicii Arena,Sollentuna) =E= -211 ; (LHS = 0, INFES = 211 ****)
+     
+flow_parity(Avicii Arena,Bergshamra)..  - road_util(Farsta Shopping Centre,Avicii Arena,Bergshamra) - road_util(Nacka Forum,Avicii Arena,Bergshamra) + road_util(Avicii Arena,Farsta Shopping Centre,Bergshamra) + road_util(Avicii Arena,Nacka Forum,Bergshamra) + road_util(Avicii Arena,Årstaberg,Bergshamra) + road_util(Avicii Arena,T-Centralen,Bergshamra) - road_util(Årstaberg,Avicii Arena,Bergshamra) - road_util(T-Centralen,Avicii Arena,Bergshamra) =E= -20 ; (LHS = 0, INFES = 20 ****)
+     
+flow_parity(Avicii Arena,Avicii Arena)..  - road_util(Farsta Shopping Centre,Avicii Arena,Avicii Arena) - road_util(Nacka Forum,Avicii Arena,Avicii Arena) + road_util(Avicii Arena,Farsta Shopping Centre,Avicii Arena) + road_util(Avicii Arena,Nacka Forum,Avicii Arena) + road_util(Avicii Arena,Årstaberg,Avicii Arena) + road_util(Avicii Arena,T-Centralen,Avicii Arena) - road_util(Årstaberg,Avicii Arena,Avicii Arena) - road_util(T-Centralen,Avicii Arena,Avicii Arena) =E= 17694 ; (LHS = 0, INFES = 17694 ****)
+     
+flow_parity(Avicii Arena,Årstaberg)..  - road_util(Farsta Shopping Centre,Avicii Arena,Årstaberg) - road_util(Nacka Forum,Avicii Arena,Årstaberg) + road_util(Avicii Arena,Farsta Shopping Centre,Årstaberg) + road_util(Avicii Arena,Nacka Forum,Årstaberg) + road_util(Avicii Arena,Årstaberg,Årstaberg) + road_util(Avicii Arena,T-Centralen,Årstaberg) - road_util(Årstaberg,Avicii Arena,Årstaberg) - road_util(T-Centralen,Avicii Arena,Årstaberg) =E= -34 ; (LHS = 0, INFES = 34 ****)
+     
+flow_parity(Avicii Arena,T-Centralen)..  - road_util(Farsta Shopping Centre,Avicii Arena,T-Centralen) - road_util(Nacka Forum,Avicii Arena,T-Centralen) + road_util(Avicii Arena,Farsta Shopping Centre,T-Centralen) + road_util(Avicii Arena,Nacka Forum,T-Centralen) + road_util(Avicii Arena,Årstaberg,T-Centralen) + road_util(Avicii Arena,T-Centralen,T-Centralen) - road_util(Årstaberg,Avicii Arena,T-Centralen) - road_util(T-Centralen,Avicii Arena,T-Centralen) =E= -1007 ; (LHS = 0, INFES = 1007 ****)
+     
+flow_parity(Årstaberg,Farsta Shopping Centre)..  - road_util(Skärholmen,Årstaberg,Farsta Shopping Centre) - road_util(Vällingby,Årstaberg,Farsta Shopping Centre) - road_util(Bergshamra,Årstaberg,Farsta Shopping Centre) - road_util(Avicii Arena,Årstaberg,Farsta Shopping Centre) + road_util(Årstaberg,Skärholmen,Farsta Shopping Centre) + road_util(Årstaberg,Vällingby,Farsta Shopping Centre) + road_util(Årstaberg,Bergshamra,Farsta Shopping Centre) + road_util(Årstaberg,Avicii Arena,Farsta Shopping Centre) =E= -168 ; (LHS = 0, INFES = 168 ****)
+     
+flow_parity(Årstaberg,Skärholmen)..  - road_util(Skärholmen,Årstaberg,Skärholmen) - road_util(Vällingby,Årstaberg,Skärholmen) - road_util(Bergshamra,Årstaberg,Skärholmen) - road_util(Avicii Arena,Årstaberg,Skärholmen) + road_util(Årstaberg,Skärholmen,Skärholmen) + road_util(Årstaberg,Vällingby,Skärholmen) + road_util(Årstaberg,Bergshamra,Skärholmen) + road_util(Årstaberg,Avicii Arena,Skärholmen) =E= -93 ; (LHS = 0, INFES = 93 ****)
+     
+flow_parity(Årstaberg,Vällingby)..  - road_util(Skärholmen,Årstaberg,Vällingby) - road_util(Vällingby,Årstaberg,Vällingby) - road_util(Bergshamra,Årstaberg,Vällingby) - road_util(Avicii Arena,Årstaberg,Vällingby) + road_util(Årstaberg,Skärholmen,Vällingby) + road_util(Årstaberg,Vällingby,Vällingby) + road_util(Årstaberg,Bergshamra,Vällingby) + road_util(Årstaberg,Avicii Arena,Vällingby) =E= -197 ; (LHS = 0, INFES = 197 ****)
+     
+flow_parity(Årstaberg,Täby)..  - road_util(Skärholmen,Årstaberg,Täby) - road_util(Vällingby,Årstaberg,Täby) - road_util(Bergshamra,Årstaberg,Täby) - road_util(Avicii Arena,Årstaberg,Täby) + road_util(Årstaberg,Skärholmen,Täby) + road_util(Årstaberg,Vällingby,Täby) + road_util(Årstaberg,Bergshamra,Täby) + road_util(Årstaberg,Avicii Arena,Täby) =E= -215 ; (LHS = 0, INFES = 215 ****)
+     
+flow_parity(Årstaberg,Lidingö)..  - road_util(Skärholmen,Årstaberg,Lidingö) - road_util(Vällingby,Årstaberg,Lidingö) - road_util(Bergshamra,Årstaberg,Lidingö) - road_util(Avicii Arena,Årstaberg,Lidingö) + road_util(Årstaberg,Skärholmen,Lidingö) + road_util(Årstaberg,Vällingby,Lidingö) + road_util(Årstaberg,Bergshamra,Lidingö) + road_util(Årstaberg,Avicii Arena,Lidingö) =E= -133 ; (LHS = 0, INFES = 133 ****)
+     
+flow_parity(Årstaberg,Nacka Forum)..  - road_util(Skärholmen,Årstaberg,Nacka Forum) - road_util(Vällingby,Årstaberg,Nacka Forum) - road_util(Bergshamra,Årstaberg,Nacka Forum) - road_util(Avicii Arena,Årstaberg,Nacka Forum) + road_util(Årstaberg,Skärholmen,Nacka Forum) + road_util(Årstaberg,Vällingby,Nacka Forum) + road_util(Årstaberg,Bergshamra,Nacka Forum) + road_util(Årstaberg,Avicii Arena,Nacka Forum) =E= -307 ; (LHS = 0, INFES = 307 ****)
+     
+flow_parity(Årstaberg,Sollentuna)..  - road_util(Skärholmen,Årstaberg,Sollentuna) - road_util(Vällingby,Årstaberg,Sollentuna) - road_util(Bergshamra,Årstaberg,Sollentuna) - road_util(Avicii Arena,Årstaberg,Sollentuna) + road_util(Årstaberg,Skärholmen,Sollentuna) + road_util(Årstaberg,Vällingby,Sollentuna) + road_util(Årstaberg,Bergshamra,Sollentuna) + road_util(Årstaberg,Avicii Arena,Sollentuna) =E= -211 ; (LHS = 0, INFES = 211 ****)
+     
+flow_parity(Årstaberg,Bergshamra)..  - road_util(Skärholmen,Årstaberg,Bergshamra) - road_util(Vällingby,Årstaberg,Bergshamra) - road_util(Bergshamra,Årstaberg,Bergshamra) - road_util(Avicii Arena,Årstaberg,Bergshamra) + road_util(Årstaberg,Skärholmen,Bergshamra) + road_util(Årstaberg,Vällingby,Bergshamra) + road_util(Årstaberg,Bergshamra,Bergshamra) + road_util(Årstaberg,Avicii Arena,Bergshamra) =E= -20 ; (LHS = 0, INFES = 20 ****)
+     
+flow_parity(Årstaberg,Avicii Arena)..  - road_util(Skärholmen,Årstaberg,Avicii Arena) - road_util(Vällingby,Årstaberg,Avicii Arena) - road_util(Bergshamra,Årstaberg,Avicii Arena) - road_util(Avicii Arena,Årstaberg,Avicii Arena) + road_util(Årstaberg,Skärholmen,Avicii Arena) + road_util(Årstaberg,Vällingby,Avicii Arena) + road_util(Årstaberg,Bergshamra,Avicii Arena) + road_util(Årstaberg,Avicii Arena,Avicii Arena) =E= -196 ; (LHS = 0, INFES = 196 ****)
+     
+flow_parity(Årstaberg,Årstaberg)..  - road_util(Skärholmen,Årstaberg,Årstaberg) - road_util(Vällingby,Årstaberg,Årstaberg) - road_util(Bergshamra,Årstaberg,Årstaberg) - road_util(Avicii Arena,Årstaberg,Årstaberg) + road_util(Årstaberg,Skärholmen,Årstaberg) + road_util(Årstaberg,Vällingby,Årstaberg) + road_util(Årstaberg,Bergshamra,Årstaberg) + road_util(Årstaberg,Avicii Arena,Årstaberg) =E= 3121 ; (LHS = 0, INFES = 3121 ****)
+     
+flow_parity(Årstaberg,T-Centralen)..  - road_util(Skärholmen,Årstaberg,T-Centralen) - road_util(Vällingby,Årstaberg,T-Centralen) - road_util(Bergshamra,Årstaberg,T-Centralen) - road_util(Avicii Arena,Årstaberg,T-Centralen) + road_util(Årstaberg,Skärholmen,T-Centralen) + road_util(Årstaberg,Vällingby,T-Centralen) + road_util(Årstaberg,Bergshamra,T-Centralen) + road_util(Årstaberg,Avicii Arena,T-Centralen) =E= -1007 ; (LHS = 0, INFES = 1007 ****)
+     
+flow_parity(T-Centralen,Farsta Shopping Centre)..  - road_util(Vällingby,T-Centralen,Farsta Shopping Centre) - road_util(Lidingö,T-Centralen,Farsta Shopping Centre) - road_util(Nacka Forum,T-Centralen,Farsta Shopping Centre) - road_util(Bergshamra,T-Centralen,Farsta Shopping Centre) - road_util(Avicii Arena,T-Centralen,Farsta Shopping Centre) + road_util(T-Centralen,Vällingby,Farsta Shopping Centre) + road_util(T-Centralen,Lidingö,Farsta Shopping Centre) + road_util(T-Centralen,Nacka Forum,Farsta Shopping Centre) + road_util(T-Centralen,Bergshamra,Farsta Shopping Centre) + road_util(T-Centralen,Avicii Arena,Farsta Shopping Centre) =E= -13618 ; (LHS = 0, INFES = 13618 ****)
+     
+flow_parity(T-Centralen,Skärholmen)..  - road_util(Vällingby,T-Centralen,Skärholmen) - road_util(Lidingö,T-Centralen,Skärholmen) - road_util(Nacka Forum,T-Centralen,Skärholmen) - road_util(Bergshamra,T-Centralen,Skärholmen) - road_util(Avicii Arena,T-Centralen,Skärholmen) + road_util(T-Centralen,Vällingby,Skärholmen) + road_util(T-Centralen,Lidingö,Skärholmen) + road_util(T-Centralen,Nacka Forum,Skärholmen) + road_util(T-Centralen,Bergshamra,Skärholmen) + road_util(T-Centralen,Avicii Arena,Skärholmen) =E= -7578 ; (LHS = 0, INFES = 7578 ****)
+     
+flow_parity(T-Centralen,Vällingby)..  - road_util(Vällingby,T-Centralen,Vällingby) - road_util(Lidingö,T-Centralen,Vällingby) - road_util(Nacka Forum,T-Centralen,Vällingby) - road_util(Bergshamra,T-Centralen,Vällingby) - road_util(Avicii Arena,T-Centralen,Vällingby) + road_util(T-Centralen,Vällingby,Vällingby) + road_util(T-Centralen,Lidingö,Vällingby) + road_util(T-Centralen,Nacka Forum,Vällingby) + road_util(T-Centralen,Bergshamra,Vällingby) + road_util(T-Centralen,Avicii Arena,Vällingby) =E= -15987 ; (LHS = 0, INFES = 15987 ****)
+     
+flow_parity(T-Centralen,Täby)..  - road_util(Vällingby,T-Centralen,Täby) - road_util(Lidingö,T-Centralen,Täby) - road_util(Nacka Forum,T-Centralen,Täby) - road_util(Bergshamra,T-Centralen,Täby) - road_util(Avicii Arena,T-Centralen,Täby) + road_util(T-Centralen,Vällingby,Täby) + road_util(T-Centralen,Lidingö,Täby) + road_util(T-Centralen,Nacka Forum,Täby) + road_util(T-Centralen,Bergshamra,Täby) + road_util(T-Centralen,Avicii Arena,Täby) =E= -17501 ; (LHS = 0, INFES = 17501 ****)
+     
+flow_parity(T-Centralen,Lidingö)..  - road_util(Vällingby,T-Centralen,Lidingö) - road_util(Lidingö,T-Centralen,Lidingö) - road_util(Nacka Forum,T-Centralen,Lidingö) - road_util(Bergshamra,T-Centralen,Lidingö) - road_util(Avicii Arena,T-Centralen,Lidingö) + road_util(T-Centralen,Vällingby,Lidingö) + road_util(T-Centralen,Lidingö,Lidingö) + road_util(T-Centralen,Nacka Forum,Lidingö) + road_util(T-Centralen,Bergshamra,Lidingö) + road_util(T-Centralen,Avicii Arena,Lidingö) =E= -10843 ; (LHS = 0, INFES = 10843 ****)
+     
+flow_parity(T-Centralen,Nacka Forum)..  - road_util(Vällingby,T-Centralen,Nacka Forum) - road_util(Lidingö,T-Centralen,Nacka Forum) - road_util(Nacka Forum,T-Centralen,Nacka Forum) - road_util(Bergshamra,T-Centralen,Nacka Forum) - road_util(Avicii Arena,T-Centralen,Nacka Forum) + road_util(T-Centralen,Vällingby,Nacka Forum) + road_util(T-Centralen,Lidingö,Nacka Forum) + road_util(T-Centralen,Nacka Forum,Nacka Forum) + road_util(T-Centralen,Bergshamra,Nacka Forum) + road_util(T-Centralen,Avicii Arena,Nacka Forum) =E= -24895 ; (LHS = 0, INFES = 24895 ****)
+     
+flow_parity(T-Centralen,Sollentuna)..  - road_util(Vällingby,T-Centralen,Sollentuna) - road_util(Lidingö,T-Centralen,Sollentuna) - road_util(Nacka Forum,T-Centralen,Sollentuna) - road_util(Bergshamra,T-Centralen,Sollentuna) - road_util(Avicii Arena,T-Centralen,Sollentuna) + road_util(T-Centralen,Vällingby,Sollentuna) + road_util(T-Centralen,Lidingö,Sollentuna) + road_util(T-Centralen,Nacka Forum,Sollentuna) + road_util(T-Centralen,Bergshamra,Sollentuna) + road_util(T-Centralen,Avicii Arena,Sollentuna) =E= -17160 ; (LHS = 0, INFES = 17160 ****)
+     
+flow_parity(T-Centralen,Bergshamra)..  - road_util(Vällingby,T-Centralen,Bergshamra) - road_util(Lidingö,T-Centralen,Bergshamra) - road_util(Nacka Forum,T-Centralen,Bergshamra) - road_util(Bergshamra,T-Centralen,Bergshamra) - road_util(Avicii Arena,T-Centralen,Bergshamra) + road_util(T-Centralen,Vällingby,Bergshamra) + road_util(T-Centralen,Lidingö,Bergshamra) + road_util(T-Centralen,Nacka Forum,Bergshamra) + road_util(T-Centralen,Bergshamra,Bergshamra) + road_util(T-Centralen,Avicii Arena,Bergshamra) =E= -1645 ; (LHS = 0, INFES = 1645 ****)
+     
+flow_parity(T-Centralen,Avicii Arena)..  - road_util(Vällingby,T-Centralen,Avicii Arena) - road_util(Lidingö,T-Centralen,Avicii Arena) - road_util(Nacka Forum,T-Centralen,Avicii Arena) - road_util(Bergshamra,T-Centralen,Avicii Arena) - road_util(Avicii Arena,T-Centralen,Avicii Arena) + road_util(T-Centralen,Vällingby,Avicii Arena) + road_util(T-Centralen,Lidingö,Avicii Arena) + road_util(T-Centralen,Nacka Forum,Avicii Arena) + road_util(T-Centralen,Bergshamra,Avicii Arena) + road_util(T-Centralen,Avicii Arena,Avicii Arena) =E= -15930 ; (LHS = 0, INFES = 15930 ****)
+     
+flow_parity(T-Centralen,Årstaberg)..  - road_util(Vällingby,T-Centralen,Årstaberg) - road_util(Lidingö,T-Centralen,Årstaberg) - road_util(Nacka Forum,T-Centralen,Årstaberg) - road_util(Bergshamra,T-Centralen,Årstaberg) - road_util(Avicii Arena,T-Centralen,Årstaberg) + road_util(T-Centralen,Vällingby,Årstaberg) + road_util(T-Centralen,Lidingö,Årstaberg) + road_util(T-Centralen,Nacka Forum,Årstaberg) + road_util(T-Centralen,Bergshamra,Årstaberg) + road_util(T-Centralen,Avicii Arena,Årstaberg) =E= -2815 ; (LHS = 0, INFES = 2815 ****)
+     
+flow_parity(T-Centralen,T-Centralen)..  - road_util(Vällingby,T-Centralen,T-Centralen) - road_util(Lidingö,T-Centralen,T-Centralen) - road_util(Nacka Forum,T-Centralen,T-Centralen) - road_util(Bergshamra,T-Centralen,T-Centralen) - road_util(Avicii Arena,T-Centralen,T-Centralen) + road_util(T-Centralen,Vällingby,T-Centralen) + road_util(T-Centralen,Lidingö,T-Centralen) + road_util(T-Centralen,Nacka Forum,T-Centralen) + road_util(T-Centralen,Bergshamra,T-Centralen) + road_util(T-Centralen,Avicii Arena,T-Centralen) =E= 10070 ; (LHS = 0, INFES = 10070 ****)
+     
+
+---- LP_objective  =E=  
+
+LP_objective..  0.000133052577175094*road_util(Farsta Shopping Centre,Skärholmen,Farsta Shopping Centre) + 0.000133052577175094*road_util(Farsta Shopping Centre,Skärholmen,Skärholmen) + 0.000133052577175094*road_util(Farsta Shopping Centre,Skärholmen,Vällingby) + 0.000133052577175094*road_util(Farsta Shopping Centre,Skärholmen,Täby) + 0.000133052577175094*road_util(Farsta Shopping Centre,Skärholmen,Lidingö) + 0.000133052577175094*road_util(Farsta Shopping Centre,Skärholmen,Nacka Forum) + 0.000133052577175094*road_util(Farsta Shopping Centre,Skärholmen,Sollentuna) + 0.000133052577175094*road_util(Farsta Shopping Centre,Skärholmen,Bergshamra) + 0.000133052577175094*road_util(Farsta Shopping Centre,Skärholmen,Avicii Arena) + 0.000133052577175094*road_util(Farsta Shopping Centre,Skärholmen,Årstaberg) + 0.000133052577175094*road_util(Farsta Shopping Centre,Skärholmen,T-Centralen) + 9.38299344756298E-5*road_util(Farsta Shopping Centre,Avicii Arena,Farsta Shopping Centre) + 9.38299344756298E-5*road_util(Farsta Shopping Centre,Avicii Arena,Skärholmen) + 9.38299344756298E-5*road_util(Farsta Shopping Centre,Avicii Arena,Vällingby) + 9.38299344756298E-5*road_util(Farsta Shopping Centre,Avicii Arena,Täby) + 9.38299344756298E-5*road_util(Farsta Shopping Centre,Avicii Arena,Lidingö) + 9.38299344756298E-5*road_util(Farsta Shopping Centre,Avicii Arena,Nacka Forum) + 9.38299344756298E-5*road_util(Farsta Shopping Centre,Avicii Arena,Sollentuna) + 9.38299344756298E-5*road_util(Farsta Shopping Centre,Avicii Arena,Bergshamra) + 9.38299344756298E-5*road_util(Farsta Shopping Centre,Avicii Arena,Avicii Arena) + 9.38299344756298E-5*road_util(Farsta Shopping Centre,Avicii Arena,Årstaberg) + 9.38299344756298E-5*road_util(Farsta Shopping Centre,Avicii Arena,T-Centralen) + 0.000133052577175094*road_util(Skärholmen,Farsta Shopping Centre,Farsta Shopping Centre) + 0.000133052577175094*road_util(Skärholmen,Farsta Shopping Centre,Skärholmen) + 0.000133052577175094*road_util(Skärholmen,Farsta Shopping Centre,Vällingby) + 0.000133052577175094*road_util(Skärholmen,Farsta Shopping Centre,Täby) + 0.000133052577175094*road_util(Skärholmen,Farsta Shopping Centre,Lidingö) + 0.000133052577175094*road_util(Skärholmen,Farsta Shopping Centre,Nacka Forum) + 0.000133052577175094*road_util(Skärholmen,Farsta Shopping Centre,Sollentuna) + 0.000133052577175094*road_util(Skärholmen,Farsta Shopping Centre,Bergshamra) + 0.000133052577175094*road_util(Skärholmen,Farsta Shopping Centre,Avicii Arena) + 0.000133052577175094*road_util(Skärholmen,Farsta Shopping Centre,Årstaberg) + 0.000133052577175094*road_util(Skärholmen,Farsta Shopping Centre,T-Centralen) + 6.82837520585865E-5*road_util(Skärholmen,Årstaberg,Farsta Shopping Centre) + 6.82837520585865E-5*road_util(Skärholmen,Årstaberg,Skärholmen) + 6.82837520585865E-5*road_util(Skärholmen,Årstaberg,Vällingby) + 6.82837520585865E-5*road_util(Skärholmen,Årstaberg,Täby) + 6.82837520585865E-5*road_util(Skärholmen,Årstaberg,Lidingö) + 6.82837520585865E-5*road_util(Skärholmen,Årstaberg,Nacka Forum) + 6.82837520585865E-5*road_util(Skärholmen,Årstaberg,Sollentuna) + 6.82837520585865E-5*road_util(Skärholmen,Årstaberg,Bergshamra) + 6.82837520585865E-5*road_util(Skärholmen,Årstaberg,Avicii Arena) + 6.82837520585865E-5*road_util(Skärholmen,Årstaberg,Årstaberg) + 6.82837520585865E-5*road_util(Skärholmen,Årstaberg,T-Centralen) + 0.000119135218472967*road_util(Vällingby,Sollentuna,Farsta Shopping Centre) + 0.000119135218472967*road_util(Vällingby,Sollentuna,Skärholmen) + 0.000119135218472967*road_util(Vällingby,Sollentuna,Vällingby) + 0.000119135218472967*road_util(Vällingby,Sollentuna,Täby) + 0.000119135218472967*road_util(Vällingby,Sollentuna,Lidingö) + 0.000119135218472967*road_util(Vällingby,Sollentuna,Nacka Forum) + 0.000119135218472967*road_util(Vällingby,Sollentuna,Sollentuna) + 0.000119135218472967*road_util(Vällingby,Sollentuna,Bergshamra) + 0.000119135218472967*road_util(Vällingby,Sollentuna,Avicii Arena) + 0.000119135218472967*road_util(Vällingby,Sollentuna,Årstaberg) + 0.000119135218472967*road_util(Vällingby,Sollentuna,T-Centralen) + 0.000124522583131855*road_util(Vällingby,Bergshamra,Farsta Shopping Centre) + 0.000124522583131855*road_util(Vällingby,Bergshamra,Skärholmen) + 0.000124522583131855*road_util(Vällingby,Bergshamra,Vällingby) + 0.000124522583131855*road_util(Vällingby,Bergshamra,Täby) + 0.000124522583131855*road_util(Vällingby,Bergshamra,Lidingö) + 0.000124522583131855*road_util(Vällingby,Bergshamra,Nacka Forum) + 0.000124522583131855*road_util(Vällingby,Bergshamra,Sollentuna) + 0.000124522583131855*road_util(Vällingby,Bergshamra,Bergshamra) + 0.000124522583131855*road_util(Vällingby,Bergshamra,Avicii Arena) + 0.000124522583131855*road_util(Vällingby,Bergshamra,Årstaberg) + 0.000124522583131855*road_util(Vällingby,Bergshamra,T-Centralen) + 0.000141768719997197*road_util(Vällingby,Årstaberg,Farsta Shopping Centre) + 0.000141768719997197*road_util(Vällingby,Årstaberg,Skärholmen) + 0.000141768719997197*road_util(Vällingby,Årstaberg,Vällingby) + 0.000141768719997197*road_util(Vällingby,Årstaberg,Täby) + 0.000141768719997197*road_util(Vällingby,Årstaberg,Lidingö) + 0.000141768719997197*road_util(Vällingby,Årstaberg,Nacka Forum) + 0.000141768719997197*road_util(Vällingby,Årstaberg,Sollentuna) + 0.000141768719997197*road_util(Vällingby,Årstaberg,Bergshamra) + 0.000141768719997197*road_util(Vällingby,Årstaberg,Avicii Arena) + 0.000141768719997197*road_util(Vällingby,Årstaberg,Årstaberg) + 0.000141768719997197*road_util(Vällingby,Årstaberg,T-Centralen) + 0.000142600914538001*road_util(Vällingby,T-Centralen,Farsta Shopping Centre) + 0.000142600914538001*road_util(Vällingby,T-Centralen,Skärholmen) + 0.000142600914538001*road_util(Vällingby,T-Centralen,Vällingby) + 0.000142600914538001*road_util(Vällingby,T-Centralen,Täby) + 0.000142600914538001*road_util(Vällingby,T-Centralen,Lidingö) + 0.000142600914538001*road_util(Vällingby,T-Centralen,Nacka Forum) + 0.000142600914538001*road_util(Vällingby,T-Centralen,Sollentuna) + 0.000142600914538001*road_util(Vällingby,T-Centralen,Bergshamra) + 0.000142600914538001*road_util(Vällingby,T-Centralen,Avicii Arena) + 0.000142600914538001*road_util(Vällingby,T-Centralen,Årstaberg) + 0.000142600914538001*road_util(Vällingby,T-Centralen,T-Centralen) + 0.000116934282911104*road_util(Täby,Sollentuna,Farsta Shopping Centre) + 0.000116934282911104*road_util(Täby,Sollentuna,Skärholmen) + 0.000116934282911104*road_util(Täby,Sollentuna,Vällingby) + 0.000116934282911104*road_util(Täby,Sollentuna,Täby) + 0.000116934282911104*road_util(Täby,Sollentuna,Lidingö) + 0.000116934282911104*road_util(Täby,Sollentuna,Nacka Forum) + 0.000116934282911104*road_util(Täby,Sollentuna,Sollentuna) + 0.000116934282911104*road_util(Täby,Sollentuna,Bergshamra) + 0.000116934282911104*road_util(Täby,Sollentuna,Avicii Arena) + 0.000116934282911104*road_util(Täby,Sollentuna,Årstaberg) + 0.000116934282911104*road_util(Täby,Sollentuna,T-Centralen) + 6.88202985388416E-5*road_util(Täby,Bergshamra,Farsta Shopping Centre) + 6.88202985388416E-5*road_util(Täby,Bergshamra,Skärholmen) + 6.88202985388416E-5*road_util(Täby,Bergshamra,Vällingby) + 6.88202985388416E-5*road_util(Täby,Bergshamra,Täby) + 6.88202985388416E-5*road_util(Täby,Bergshamra,Lidingö) + 6.88202985388416E-5*road_util(Täby,Bergshamra,Nacka Forum) + 6.88202985388416E-5*road_util(Täby,Bergshamra,Sollentuna) + 6.88202985388416E-5*road_util(Täby,Bergshamra,Bergshamra) + 6.88202985388416E-5*road_util(Täby,Bergshamra,Avicii Arena) + 6.88202985388416E-5*road_util(Täby,Bergshamra,Årstaberg) + 6.88202985388416E-5*road_util(Täby,Bergshamra,T-Centralen) + 9.39284838291461E-5*road_util(Lidingö,T-Centralen,Farsta Shopping Centre) + 9.39284838291461E-5*road_util(Lidingö,T-Centralen,Skärholmen) + 9.39284838291461E-5*road_util(Lidingö,T-Centralen,Vällingby) + 9.39284838291461E-5*road_util(Lidingö,T-Centralen,Täby) + 9.39284838291461E-5*road_util(Lidingö,T-Centralen,Lidingö) + 9.39284838291461E-5*road_util(Lidingö,T-Centralen,Nacka Forum) + 9.39284838291461E-5*road_util(Lidingö,T-Centralen,Sollentuna) + 9.39284838291461E-5*road_util(Lidingö,T-Centralen,Bergshamra) + 9.39284838291461E-5*road_util(Lidingö,T-Centralen,Avicii Arena) + 9.39284838291461E-5*road_util(Lidingö,T-Centralen,Årstaberg) + 9.39284838291461E-5*road_util(Lidingö,T-Centralen,T-Centralen) + 9.01836083955289E-5*road_util(Nacka Forum,Avicii Arena,Farsta Shopping Centre) + 9.01836083955289E-5*road_util(Nacka Forum,Avicii Arena,Skärholmen) + 9.01836083955289E-5*road_util(Nacka Forum,Avicii Arena,Vällingby) + 9.01836083955289E-5*road_util(Nacka Forum,Avicii Arena,Täby) + 9.01836083955289E-5*road_util(Nacka Forum,Avicii Arena,Lidingö) + 9.01836083955289E-5*road_util(Nacka Forum,Avicii Arena,Nacka Forum) + 9.01836083955289E-5*road_util(Nacka Forum,Avicii Arena,Sollentuna) + 9.01836083955289E-5*road_util(Nacka Forum,Avicii Arena,Bergshamra) + 9.01836083955289E-5*road_util(Nacka Forum,Avicii Arena,Avicii Arena) + 9.01836083955289E-5*road_util(Nacka Forum,Avicii Arena,Årstaberg) + 9.01836083955289E-5*road_util(Nacka Forum,Avicii Arena,T-Centralen) + 9.37204351939451E-5*road_util(Nacka Forum,T-Centralen,Farsta Shopping Centre) + 9.37204351939451E-5*road_util(Nacka Forum,T-Centralen,Skärholmen) + 9.37204351939451E-5*road_util(Nacka Forum,T-Centralen,Vällingby) + 9.37204351939451E-5*road_util(Nacka Forum,T-Centralen,Täby) + 9.37204351939451E-5*road_util(Nacka Forum,T-Centralen,Lidingö) + 9.37204351939451E-5*road_util(Nacka Forum,T-Centralen,Nacka Forum) + 9.37204351939451E-5*road_util(Nacka Forum,T-Centralen,Sollentuna) + 9.37204351939451E-5*road_util(Nacka Forum,T-Centralen,Bergshamra) + 9.37204351939451E-5*road_util(Nacka Forum,T-Centralen,Avicii Arena) + 9.37204351939451E-5*road_util(Nacka Forum,T-Centralen,Årstaberg) + 9.37204351939451E-5*road_util(Nacka Forum,T-Centralen,T-Centralen) + 0.000119135218472967*road_util(Sollentuna,Vällingby,Farsta Shopping Centre) + 0.000119135218472967*road_util(Sollentuna,Vällingby,Skärholmen) + 0.000119135218472967*road_util(Sollentuna,Vällingby,Vällingby) + 0.000119135218472967*road_util(Sollentuna,Vällingby,Täby) + 0.000119135218472967*road_util(Sollentuna,Vällingby,Lidingö) + 0.000119135218472967*road_util(Sollentuna,Vällingby,Nacka Forum) + 0.000119135218472967*road_util(Sollentuna,Vällingby,Sollentuna) + 0.000119135218472967*road_util(Sollentuna,Vällingby,Bergshamra) + 0.000119135218472967*road_util(Sollentuna,Vällingby,Avicii Arena) + 0.000119135218472967*road_util(Sollentuna,Vällingby,Årstaberg) + 0.000119135218472967*road_util(Sollentuna,Vällingby,T-Centralen) + 0.000116934282911104*road_util(Sollentuna,Täby,Farsta Shopping Centre) + 0.000116934282911104*road_util(Sollentuna,Täby,Skärholmen) + 0.000116934282911104*road_util(Sollentuna,Täby,Vällingby) + 0.000116934282911104*road_util(Sollentuna,Täby,Täby) + 0.000116934282911104*road_util(Sollentuna,Täby,Lidingö) + 0.000116934282911104*road_util(Sollentuna,Täby,Nacka Forum) + 0.000116934282911104*road_util(Sollentuna,Täby,Sollentuna) + 0.000116934282911104*road_util(Sollentuna,Täby,Bergshamra) + 0.000116934282911104*road_util(Sollentuna,Täby,Avicii Arena) + 0.000116934282911104*road_util(Sollentuna,Täby,Årstaberg) + 0.000116934282911104*road_util(Sollentuna,Täby,T-Centralen) + 8.14784155015943E-5*road_util(Sollentuna,Bergshamra,Farsta Shopping Centre) + 8.14784155015943E-5*road_util(Sollentuna,Bergshamra,Skärholmen) + 8.14784155015943E-5*road_util(Sollentuna,Bergshamra,Vällingby) + 8.14784155015943E-5*road_util(Sollentuna,Bergshamra,Täby) + 8.14784155015943E-5*road_util(Sollentuna,Bergshamra,Lidingö) + 8.14784155015943E-5*road_util(Sollentuna,Bergshamra,Nacka Forum) + 8.14784155015943E-5*road_util(Sollentuna,Bergshamra,Sollentuna) + 8.14784155015943E-5*road_util(Sollentuna,Bergshamra,Bergshamra) + 8.14784155015943E-5*road_util(Sollentuna,Bergshamra,Avicii Arena) + 8.14784155015943E-5*road_util(Sollentuna,Bergshamra,Årstaberg) + 8.14784155015943E-5*road_util(Sollentuna,Bergshamra,T-Centralen) + 0.000124522583131855*road_util(Bergshamra,Vällingby,Farsta Shopping Centre) + 0.000124522583131855*road_util(Bergshamra,Vällingby,Skärholmen) + 0.000124522583131855*road_util(Bergshamra,Vällingby,Vällingby) + 0.000124522583131855*road_util(Bergshamra,Vällingby,Täby) + 0.000124522583131855*road_util(Bergshamra,Vällingby,Lidingö) + 0.000124522583131855*road_util(Bergshamra,Vällingby,Nacka Forum) + 0.000124522583131855*road_util(Bergshamra,Vällingby,Sollentuna) + 0.000124522583131855*road_util(Bergshamra,Vällingby,Bergshamra) + 0.000124522583131855*road_util(Bergshamra,Vällingby,Avicii Arena) + 0.000124522583131855*road_util(Bergshamra,Vällingby,Årstaberg) + 0.000124522583131855*road_util(Bergshamra,Vällingby,T-Centralen) + 6.88202985388416E-5*road_util(Bergshamra,Täby,Farsta Shopping Centre) + 6.88202985388416E-5*road_util(Bergshamra,Täby,Skärholmen) + 6.88202985388416E-5*road_util(Bergshamra,Täby,Vällingby) + 6.88202985388416E-5*road_util(Bergshamra,Täby,Täby) + 6.88202985388416E-5*road_util(Bergshamra,Täby,Lidingö) + 6.88202985388416E-5*road_util(Bergshamra,Täby,Nacka Forum) + 6.88202985388416E-5*road_util(Bergshamra,Täby,Sollentuna) + 6.88202985388416E-5*road_util(Bergshamra,Täby,Bergshamra) + 6.88202985388416E-5*road_util(Bergshamra,Täby,Avicii Arena) + 6.88202985388416E-5*road_util(Bergshamra,Täby,Årstaberg) + 6.88202985388416E-5*road_util(Bergshamra,Täby,T-Centralen) + 8.14784155015943E-5*road_util(Bergshamra,Sollentuna,Farsta Shopping Centre) + 8.14784155015943E-5*road_util(Bergshamra,Sollentuna,Skärholmen) + 8.14784155015943E-5*road_util(Bergshamra,Sollentuna,Vällingby) + 8.14784155015943E-5*road_util(Bergshamra,Sollentuna,Täby) + 8.14784155015943E-5*road_util(Bergshamra,Sollentuna,Lidingö) + 8.14784155015943E-5*road_util(Bergshamra,Sollentuna,Nacka Forum) + 8.14784155015943E-5*road_util(Bergshamra,Sollentuna,Sollentuna) + 8.14784155015943E-5*road_util(Bergshamra,Sollentuna,Bergshamra) + 8.14784155015943E-5*road_util(Bergshamra,Sollentuna,Avicii Arena) + 8.14784155015943E-5*road_util(Bergshamra,Sollentuna,Årstaberg) + 8.14784155015943E-5*road_util(Bergshamra,Sollentuna,T-Centralen) + 0.000105590157328568*road_util(Bergshamra,Årstaberg,Farsta Shopping Centre) + 0.000105590157328568*road_util(Bergshamra,Årstaberg,Skärholmen) + 0.000105590157328568*road_util(Bergshamra,Årstaberg,Vällingby) + 0.000105590157328568*road_util(Bergshamra,Årstaberg,Täby) + 0.000105590157328568*road_util(Bergshamra,Årstaberg,Lidingö) + 0.000105590157328568*road_util(Bergshamra,Årstaberg,Nacka Forum) + 0.000105590157328568*road_util(Bergshamra,Årstaberg,Sollentuna) + 0.000105590157328568*road_util(Bergshamra,Årstaberg,Bergshamra) + 0.000105590157328568*road_util(Bergshamra,Årstaberg,Avicii Arena) + 0.000105590157328568*road_util(Bergshamra,Årstaberg,Årstaberg) + 0.000105590157328568*road_util(Bergshamra,Årstaberg,T-Centralen) + 7.71422439468797E-5*road_util(Bergshamra,T-Centralen,Farsta Shopping Centre) + 7.71422439468797E-5*road_util(Bergshamra,T-Centralen,Skärholmen) + 7.71422439468797E-5*road_util(Bergshamra,T-Centralen,Vällingby) + 7.71422439468797E-5*road_util(Bergshamra,T-Centralen,Täby) + 7.71422439468797E-5*road_util(Bergshamra,T-Centralen,Lidingö) + 7.71422439468797E-5*road_util(Bergshamra,T-Centralen,Nacka Forum) + 7.71422439468797E-5*road_util(Bergshamra,T-Centralen,Sollentuna) + 7.71422439468797E-5*road_util(Bergshamra,T-Centralen,Bergshamra) + 7.71422439468797E-5*road_util(Bergshamra,T-Centralen,Avicii Arena) + 7.71422439468797E-5*road_util(Bergshamra,T-Centralen,Årstaberg) + 7.71422439468797E-5*road_util(Bergshamra,T-Centralen,T-Centralen) + 9.38299344756298E-5*road_util(Avicii Arena,Farsta Shopping Centre,Farsta Shopping Centre) + 9.38299344756298E-5*road_util(Avicii Arena,Farsta Shopping Centre,Skärholmen) + 9.38299344756298E-5*road_util(Avicii Arena,Farsta Shopping Centre,Vällingby) + 9.38299344756298E-5*road_util(Avicii Arena,Farsta Shopping Centre,Täby) + 9.38299344756298E-5*road_util(Avicii Arena,Farsta Shopping Centre,Lidingö) + 9.38299344756298E-5*road_util(Avicii Arena,Farsta Shopping Centre,Nacka Forum) + 9.38299344756298E-5*road_util(Avicii Arena,Farsta Shopping Centre,Sollentuna) + 9.38299344756298E-5*road_util(Avicii Arena,Farsta Shopping Centre,Bergshamra) + 9.38299344756298E-5*road_util(Avicii Arena,Farsta Shopping Centre,Avicii Arena) + 9.38299344756298E-5*road_util(Avicii Arena,Farsta Shopping Centre,Årstaberg) + 9.38299344756298E-5*road_util(Avicii Arena,Farsta Shopping Centre,T-Centralen) + 9.01836083955289E-5*road_util(Avicii Arena,Nacka Forum,Farsta Shopping Centre) + 9.01836083955289E-5*road_util(Avicii Arena,Nacka Forum,Skärholmen) + 9.01836083955289E-5*road_util(Avicii Arena,Nacka Forum,Vällingby) + 9.01836083955289E-5*road_util(Avicii Arena,Nacka Forum,Täby) + 9.01836083955289E-5*road_util(Avicii Arena,Nacka Forum,Lidingö) + 9.01836083955289E-5*road_util(Avicii Arena,Nacka Forum,Nacka Forum) + 9.01836083955289E-5*road_util(Avicii Arena,Nacka Forum,Sollentuna) + 9.01836083955289E-5*road_util(Avicii Arena,Nacka Forum,Bergshamra) + 9.01836083955289E-5*road_util(Avicii Arena,Nacka Forum,Avicii Arena) + 9.01836083955289E-5*road_util(Avicii Arena,Nacka Forum,Årstaberg) + 9.01836083955289E-5*road_util(Avicii Arena,Nacka Forum,T-Centralen) + 3.41856757419671E-5*road_util(Avicii Arena,Årstaberg,Farsta Shopping Centre) + 3.41856757419671E-5*road_util(Avicii Arena,Årstaberg,Skärholmen) + 3.41856757419671E-5*road_util(Avicii Arena,Årstaberg,Vällingby) + 3.41856757419671E-5*road_util(Avicii Arena,Årstaberg,Täby) + 3.41856757419671E-5*road_util(Avicii Arena,Årstaberg,Lidingö) + 3.41856757419671E-5*road_util(Avicii Arena,Årstaberg,Nacka Forum) + 3.41856757419671E-5*road_util(Avicii Arena,Årstaberg,Sollentuna) + 3.41856757419671E-5*road_util(Avicii Arena,Årstaberg,Bergshamra) + 3.41856757419671E-5*road_util(Avicii Arena,Årstaberg,Avicii Arena) + 3.41856757419671E-5*road_util(Avicii Arena,Årstaberg,Årstaberg) + 3.41856757419671E-5*road_util(Avicii Arena,Årstaberg,T-Centralen) + 5.16727110270157E-5*road_util(Avicii Arena,T-Centralen,Farsta Shopping Centre) + 5.16727110270157E-5*road_util(Avicii Arena,T-Centralen,Skärholmen) + 5.16727110270157E-5*road_util(Avicii Arena,T-Centralen,Vällingby) + 5.16727110270157E-5*road_util(Avicii Arena,T-Centralen,Täby) + 5.16727110270157E-5*road_util(Avicii Arena,T-Centralen,Lidingö) + 5.16727110270157E-5*road_util(Avicii Arena,T-Centralen,Nacka Forum) + 5.16727110270157E-5*road_util(Avicii Arena,T-Centralen,Sollentuna) + 5.16727110270157E-5*road_util(Avicii Arena,T-Centralen,Bergshamra) + 5.16727110270157E-5*road_util(Avicii Arena,T-Centralen,Avicii Arena) + 5.16727110270157E-5*road_util(Avicii Arena,T-Centralen,Årstaberg) + 5.16727110270157E-5*road_util(Avicii Arena,T-Centralen,T-Centralen) + 6.82837520585865E-5*road_util(Årstaberg,Skärholmen,Farsta Shopping Centre) + 6.82837520585865E-5*road_util(Årstaberg,Skärholmen,Skärholmen) + 6.82837520585865E-5*road_util(Årstaberg,Skärholmen,Vällingby) + 6.82837520585865E-5*road_util(Årstaberg,Skärholmen,Täby) + 6.82837520585865E-5*road_util(Årstaberg,Skärholmen,Lidingö) + 6.82837520585865E-5*road_util(Årstaberg,Skärholmen,Nacka Forum) + 6.82837520585865E-5*road_util(Årstaberg,Skärholmen,Sollentuna) + 6.82837520585865E-5*road_util(Årstaberg,Skärholmen,Bergshamra) + 6.82837520585865E-5*road_util(Årstaberg,Skärholmen,Avicii Arena) + 6.82837520585865E-5*road_util(Årstaberg,Skärholmen,Årstaberg) + 6.82837520585865E-5*road_util(Årstaberg,Skärholmen,T-Centralen) + 0.000141768719997197*road_util(Årstaberg,Vällingby,Farsta Shopping Centre) + 0.000141768719997197*road_util(Årstaberg,Vällingby,Skärholmen) + 0.000141768719997197*road_util(Årstaberg,Vällingby,Vällingby) + 0.000141768719997197*road_util(Årstaberg,Vällingby,Täby) + 0.000141768719997197*road_util(Årstaberg,Vällingby,Lidingö) + 0.000141768719997197*road_util(Årstaberg,Vällingby,Nacka Forum) + 0.000141768719997197*road_util(Årstaberg,Vällingby,Sollentuna) + 0.000141768719997197*road_util(Årstaberg,Vällingby,Bergshamra) + 0.000141768719997197*road_util(Årstaberg,Vällingby,Avicii Arena) + 0.000141768719997197*road_util(Årstaberg,Vällingby,Årstaberg) + 0.000141768719997197*road_util(Årstaberg,Vällingby,T-Centralen) + 0.000105590157328568*road_util(Årstaberg,Bergshamra,Farsta Shopping Centre) + 0.000105590157328568*road_util(Årstaberg,Bergshamra,Skärholmen) + 0.000105590157328568*road_util(Årstaberg,Bergshamra,Vällingby) + 0.000105590157328568*road_util(Årstaberg,Bergshamra,Täby) + 0.000105590157328568*road_util(Årstaberg,Bergshamra,Lidingö) + 0.000105590157328568*road_util(Årstaberg,Bergshamra,Nacka Forum) + 0.000105590157328568*road_util(Årstaberg,Bergshamra,Sollentuna) + 0.000105590157328568*road_util(Årstaberg,Bergshamra,Bergshamra) + 0.000105590157328568*road_util(Årstaberg,Bergshamra,Avicii Arena) + 0.000105590157328568*road_util(Årstaberg,Bergshamra,Årstaberg) + 0.000105590157328568*road_util(Årstaberg,Bergshamra,T-Centralen) + 3.41856757419671E-5*road_util(Årstaberg,Avicii Arena,Farsta Shopping Centre) + 3.41856757419671E-5*road_util(Årstaberg,Avicii Arena,Skärholmen) + 3.41856757419671E-5*road_util(Årstaberg,Avicii Arena,Vällingby) + 3.41856757419671E-5*road_util(Årstaberg,Avicii Arena,Täby) + 3.41856757419671E-5*road_util(Årstaberg,Avicii Arena,Lidingö) + 3.41856757419671E-5*road_util(Årstaberg,Avicii Arena,Nacka Forum) + 3.41856757419671E-5*road_util(Årstaberg,Avicii Arena,Sollentuna) + 3.41856757419671E-5*road_util(Årstaberg,Avicii Arena,Bergshamra) + 3.41856757419671E-5*road_util(Årstaberg,Avicii Arena,Avicii Arena) + 3.41856757419671E-5*road_util(Årstaberg,Avicii Arena,Årstaberg) + 3.41856757419671E-5*road_util(Årstaberg,Avicii Arena,T-Centralen) + 0.000142600914538001*road_util(T-Centralen,Vällingby,Farsta Shopping Centre) + 0.000142600914538001*road_util(T-Centralen,Vällingby,Skärholmen) + 0.000142600914538001*road_util(T-Centralen,Vällingby,Vällingby) + 0.000142600914538001*road_util(T-Centralen,Vällingby,Täby) + 0.000142600914538001*road_util(T-Centralen,Vällingby,Lidingö) + 0.000142600914538001*road_util(T-Centralen,Vällingby,Nacka Forum) + 0.000142600914538001*road_util(T-Centralen,Vällingby,Sollentuna) + 0.000142600914538001*road_util(T-Centralen,Vällingby,Bergshamra) + 0.000142600914538001*road_util(T-Centralen,Vällingby,Avicii Arena) + 0.000142600914538001*road_util(T-Centralen,Vällingby,Årstaberg) + 0.000142600914538001*road_util(T-Centralen,Vällingby,T-Centralen) + 9.39284838291461E-5*road_util(T-Centralen,Lidingö,Farsta Shopping Centre) + 9.39284838291461E-5*road_util(T-Centralen,Lidingö,Skärholmen) + 9.39284838291461E-5*road_util(T-Centralen,Lidingö,Vällingby) + 9.39284838291461E-5*road_util(T-Centralen,Lidingö,Täby) + 9.39284838291461E-5*road_util(T-Centralen,Lidingö,Lidingö) + 9.39284838291461E-5*road_util(T-Centralen,Lidingö,Nacka Forum) + 9.39284838291461E-5*road_util(T-Centralen,Lidingö,Sollentuna) + 9.39284838291461E-5*road_util(T-Centralen,Lidingö,Bergshamra) + 9.39284838291461E-5*road_util(T-Centralen,Lidingö,Avicii Arena) + 9.39284838291461E-5*road_util(T-Centralen,Lidingö,Årstaberg) + 9.39284838291461E-5*road_util(T-Centralen,Lidingö,T-Centralen) + 9.37204351939451E-5*road_util(T-Centralen,Nacka Forum,Farsta Shopping Centre) + 9.37204351939451E-5*road_util(T-Centralen,Nacka Forum,Skärholmen) + 9.37204351939451E-5*road_util(T-Centralen,Nacka Forum,Vällingby) + 9.37204351939451E-5*road_util(T-Centralen,Nacka Forum,Täby) + 9.37204351939451E-5*road_util(T-Centralen,Nacka Forum,Lidingö) + 9.37204351939451E-5*road_util(T-Centralen,Nacka Forum,Nacka Forum) + 9.37204351939451E-5*road_util(T-Centralen,Nacka Forum,Sollentuna) + 9.37204351939451E-5*road_util(T-Centralen,Nacka Forum,Bergshamra) + 9.37204351939451E-5*road_util(T-Centralen,Nacka Forum,Avicii Arena) + 9.37204351939451E-5*road_util(T-Centralen,Nacka Forum,Årstaberg) + 9.37204351939451E-5*road_util(T-Centralen,Nacka Forum,T-Centralen) + 7.71422439468797E-5*road_util(T-Centralen,Bergshamra,Farsta Shopping Centre) + 7.71422439468797E-5*road_util(T-Centralen,Bergshamra,Skärholmen) + 7.71422439468797E-5*road_util(T-Centralen,Bergshamra,Vällingby) + 7.71422439468797E-5*road_util(T-Centralen,Bergshamra,Täby) + 7.71422439468797E-5*road_util(T-Centralen,Bergshamra,Lidingö) + 7.71422439468797E-5*road_util(T-Centralen,Bergshamra,Nacka Forum) + 7.71422439468797E-5*road_util(T-Centralen,Bergshamra,Sollentuna) + 7.71422439468797E-5*road_util(T-Centralen,Bergshamra,Bergshamra) + 7.71422439468797E-5*road_util(T-Centralen,Bergshamra,Avicii Arena) + 7.71422439468797E-5*road_util(T-Centralen,Bergshamra,Årstaberg) + 7.71422439468797E-5*road_util(T-Centralen,Bergshamra,T-Centralen) + 5.16727110270157E-5*road_util(T-Centralen,Avicii Arena,Farsta Shopping Centre) + 5.16727110270157E-5*road_util(T-Centralen,Avicii Arena,Skärholmen) + 5.16727110270157E-5*road_util(T-Centralen,Avicii Arena,Vällingby) + 5.16727110270157E-5*road_util(T-Centralen,Avicii Arena,Täby) + 5.16727110270157E-5*road_util(T-Centralen,Avicii Arena,Lidingö) + 5.16727110270157E-5*road_util(T-Centralen,Avicii Arena,Nacka Forum) + 5.16727110270157E-5*road_util(T-Centralen,Avicii Arena,Sollentuna) + 5.16727110270157E-5*road_util(T-Centralen,Avicii Arena,Bergshamra) + 5.16727110270157E-5*road_util(T-Centralen,Avicii Arena,Avicii Arena) + 5.16727110270157E-5*road_util(T-Centralen,Avicii Arena,Årstaberg) + 5.16727110270157E-5*road_util(T-Centralen,Avicii Arena,T-Centralen) - LP_objective_variable =E= 0 ; (LHS = 0)
+     
+GAMS 49.4.0  6fb2fe8b Apr 6, 2025           LEX-LEG x86 64bit/Linux - 04/29/25 15:06:01 Page 3
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+Column Listing      SOLVE LP Using MIP From line 36
+
+
+---- road_util  Roads to be used by commuter from node
+
+road_util(Farsta Shopping Centre,Skärholmen,Farsta Shopping Centre)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,Farsta Shopping Centre)
+       -1       flow_parity(Skärholmen,Farsta Shopping Centre)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Skärholmen,Skärholmen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,Skärholmen)
+       -1       flow_parity(Skärholmen,Skärholmen)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Skärholmen,Vällingby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,Vällingby)
+       -1       flow_parity(Skärholmen,Vällingby)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Skärholmen,Täby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,Täby)
+       -1       flow_parity(Skärholmen,Täby)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Skärholmen,Lidingö)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,Lidingö)
+       -1       flow_parity(Skärholmen,Lidingö)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Skärholmen,Nacka Forum)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,Nacka Forum)
+       -1       flow_parity(Skärholmen,Nacka Forum)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Skärholmen,Sollentuna)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,Sollentuna)
+       -1       flow_parity(Skärholmen,Sollentuna)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Skärholmen,Bergshamra)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,Bergshamra)
+       -1       flow_parity(Skärholmen,Bergshamra)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Skärholmen,Avicii Arena)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,Avicii Arena)
+       -1       flow_parity(Skärholmen,Avicii Arena)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Skärholmen,Årstaberg)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,Årstaberg)
+       -1       flow_parity(Skärholmen,Årstaberg)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Skärholmen,T-Centralen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,T-Centralen)
+       -1       flow_parity(Skärholmen,T-Centralen)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Avicii Arena,Farsta Shopping Centre)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,Farsta Shopping Centre)
+       -1       flow_parity(Avicii Arena,Farsta Shopping Centre)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Avicii Arena,Skärholmen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,Skärholmen)
+       -1       flow_parity(Avicii Arena,Skärholmen)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Avicii Arena,Vällingby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,Vällingby)
+       -1       flow_parity(Avicii Arena,Vällingby)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Avicii Arena,Täby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,Täby)
+       -1       flow_parity(Avicii Arena,Täby)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Avicii Arena,Lidingö)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,Lidingö)
+       -1       flow_parity(Avicii Arena,Lidingö)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Avicii Arena,Nacka Forum)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,Nacka Forum)
+       -1       flow_parity(Avicii Arena,Nacka Forum)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Avicii Arena,Sollentuna)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,Sollentuna)
+       -1       flow_parity(Avicii Arena,Sollentuna)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Avicii Arena,Bergshamra)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,Bergshamra)
+       -1       flow_parity(Avicii Arena,Bergshamra)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Avicii Arena,Avicii Arena)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,Avicii Arena)
+       -1       flow_parity(Avicii Arena,Avicii Arena)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Avicii Arena,Årstaberg)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,Årstaberg)
+       -1       flow_parity(Avicii Arena,Årstaberg)
+        0.0001  LP_objective
+
+road_util(Farsta Shopping Centre,Avicii Arena,T-Centralen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Farsta Shopping Centre,T-Centralen)
+       -1       flow_parity(Avicii Arena,T-Centralen)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Farsta Shopping Centre,Farsta Shopping Centre)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Farsta Shopping Centre,Farsta Shopping Centre)
+        1       flow_parity(Skärholmen,Farsta Shopping Centre)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Farsta Shopping Centre,Skärholmen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Farsta Shopping Centre,Skärholmen)
+        1       flow_parity(Skärholmen,Skärholmen)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Farsta Shopping Centre,Vällingby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Farsta Shopping Centre,Vällingby)
+        1       flow_parity(Skärholmen,Vällingby)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Farsta Shopping Centre,Täby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Farsta Shopping Centre,Täby)
+        1       flow_parity(Skärholmen,Täby)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Farsta Shopping Centre,Lidingö)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Farsta Shopping Centre,Lidingö)
+        1       flow_parity(Skärholmen,Lidingö)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Farsta Shopping Centre,Nacka Forum)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Farsta Shopping Centre,Nacka Forum)
+        1       flow_parity(Skärholmen,Nacka Forum)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Farsta Shopping Centre,Sollentuna)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Farsta Shopping Centre,Sollentuna)
+        1       flow_parity(Skärholmen,Sollentuna)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Farsta Shopping Centre,Bergshamra)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Farsta Shopping Centre,Bergshamra)
+        1       flow_parity(Skärholmen,Bergshamra)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Farsta Shopping Centre,Avicii Arena)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Farsta Shopping Centre,Avicii Arena)
+        1       flow_parity(Skärholmen,Avicii Arena)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Farsta Shopping Centre,Årstaberg)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Farsta Shopping Centre,Årstaberg)
+        1       flow_parity(Skärholmen,Årstaberg)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Farsta Shopping Centre,T-Centralen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Farsta Shopping Centre,T-Centralen)
+        1       flow_parity(Skärholmen,T-Centralen)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Årstaberg,Farsta Shopping Centre)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Skärholmen,Farsta Shopping Centre)
+       -1       flow_parity(Årstaberg,Farsta Shopping Centre)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Årstaberg,Skärholmen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Skärholmen,Skärholmen)
+       -1       flow_parity(Årstaberg,Skärholmen)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Årstaberg,Vällingby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Skärholmen,Vällingby)
+       -1       flow_parity(Årstaberg,Vällingby)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Årstaberg,Täby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Skärholmen,Täby)
+       -1       flow_parity(Årstaberg,Täby)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Årstaberg,Lidingö)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Skärholmen,Lidingö)
+       -1       flow_parity(Årstaberg,Lidingö)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Årstaberg,Nacka Forum)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Skärholmen,Nacka Forum)
+       -1       flow_parity(Årstaberg,Nacka Forum)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Årstaberg,Sollentuna)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Skärholmen,Sollentuna)
+       -1       flow_parity(Årstaberg,Sollentuna)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Årstaberg,Bergshamra)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Skärholmen,Bergshamra)
+       -1       flow_parity(Årstaberg,Bergshamra)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Årstaberg,Avicii Arena)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Skärholmen,Avicii Arena)
+       -1       flow_parity(Årstaberg,Avicii Arena)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Årstaberg,Årstaberg)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Skärholmen,Årstaberg)
+       -1       flow_parity(Årstaberg,Årstaberg)
+        0.0001  LP_objective
+
+road_util(Skärholmen,Årstaberg,T-Centralen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Skärholmen,T-Centralen)
+       -1       flow_parity(Årstaberg,T-Centralen)
+        0.0001  LP_objective
+
+road_util(Vällingby,Sollentuna,Farsta Shopping Centre)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Farsta Shopping Centre)
+       -1       flow_parity(Sollentuna,Farsta Shopping Centre)
+        0.0001  LP_objective
+
+road_util(Vällingby,Sollentuna,Skärholmen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Skärholmen)
+       -1       flow_parity(Sollentuna,Skärholmen)
+        0.0001  LP_objective
+
+road_util(Vällingby,Sollentuna,Vällingby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Vällingby)
+       -1       flow_parity(Sollentuna,Vällingby)
+        0.0001  LP_objective
+
+road_util(Vällingby,Sollentuna,Täby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Täby)
+       -1       flow_parity(Sollentuna,Täby)
+        0.0001  LP_objective
+
+road_util(Vällingby,Sollentuna,Lidingö)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Lidingö)
+       -1       flow_parity(Sollentuna,Lidingö)
+        0.0001  LP_objective
+
+road_util(Vällingby,Sollentuna,Nacka Forum)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Nacka Forum)
+       -1       flow_parity(Sollentuna,Nacka Forum)
+        0.0001  LP_objective
+
+road_util(Vällingby,Sollentuna,Sollentuna)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Sollentuna)
+       -1       flow_parity(Sollentuna,Sollentuna)
+        0.0001  LP_objective
+
+road_util(Vällingby,Sollentuna,Bergshamra)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Bergshamra)
+       -1       flow_parity(Sollentuna,Bergshamra)
+        0.0001  LP_objective
+
+road_util(Vällingby,Sollentuna,Avicii Arena)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Avicii Arena)
+       -1       flow_parity(Sollentuna,Avicii Arena)
+        0.0001  LP_objective
+
+road_util(Vällingby,Sollentuna,Årstaberg)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Årstaberg)
+       -1       flow_parity(Sollentuna,Årstaberg)
+        0.0001  LP_objective
+
+road_util(Vällingby,Sollentuna,T-Centralen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,T-Centralen)
+       -1       flow_parity(Sollentuna,T-Centralen)
+        0.0001  LP_objective
+
+road_util(Vällingby,Bergshamra,Farsta Shopping Centre)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Farsta Shopping Centre)
+       -1       flow_parity(Bergshamra,Farsta Shopping Centre)
+        0.0001  LP_objective
+
+road_util(Vällingby,Bergshamra,Skärholmen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Skärholmen)
+       -1       flow_parity(Bergshamra,Skärholmen)
+        0.0001  LP_objective
+
+road_util(Vällingby,Bergshamra,Vällingby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Vällingby)
+       -1       flow_parity(Bergshamra,Vällingby)
+        0.0001  LP_objective
+
+road_util(Vällingby,Bergshamra,Täby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Täby)
+       -1       flow_parity(Bergshamra,Täby)
+        0.0001  LP_objective
+
+road_util(Vällingby,Bergshamra,Lidingö)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Lidingö)
+       -1       flow_parity(Bergshamra,Lidingö)
+        0.0001  LP_objective
+
+road_util(Vällingby,Bergshamra,Nacka Forum)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Nacka Forum)
+       -1       flow_parity(Bergshamra,Nacka Forum)
+        0.0001  LP_objective
+
+road_util(Vällingby,Bergshamra,Sollentuna)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Sollentuna)
+       -1       flow_parity(Bergshamra,Sollentuna)
+        0.0001  LP_objective
+
+road_util(Vällingby,Bergshamra,Bergshamra)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Bergshamra)
+       -1       flow_parity(Bergshamra,Bergshamra)
+        0.0001  LP_objective
+
+road_util(Vällingby,Bergshamra,Avicii Arena)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Avicii Arena)
+       -1       flow_parity(Bergshamra,Avicii Arena)
+        0.0001  LP_objective
+
+road_util(Vällingby,Bergshamra,Årstaberg)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Årstaberg)
+       -1       flow_parity(Bergshamra,Årstaberg)
+        0.0001  LP_objective
+
+road_util(Vällingby,Bergshamra,T-Centralen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,T-Centralen)
+       -1       flow_parity(Bergshamra,T-Centralen)
+        0.0001  LP_objective
+
+road_util(Vällingby,Årstaberg,Farsta Shopping Centre)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Farsta Shopping Centre)
+       -1       flow_parity(Årstaberg,Farsta Shopping Centre)
+        0.0001  LP_objective
+
+road_util(Vällingby,Årstaberg,Skärholmen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Skärholmen)
+       -1       flow_parity(Årstaberg,Skärholmen)
+        0.0001  LP_objective
+
+road_util(Vällingby,Årstaberg,Vällingby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Vällingby)
+       -1       flow_parity(Årstaberg,Vällingby)
+        0.0001  LP_objective
+
+road_util(Vällingby,Årstaberg,Täby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Täby)
+       -1       flow_parity(Årstaberg,Täby)
+        0.0001  LP_objective
+
+road_util(Vällingby,Årstaberg,Lidingö)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Lidingö)
+       -1       flow_parity(Årstaberg,Lidingö)
+        0.0001  LP_objective
+
+road_util(Vällingby,Årstaberg,Nacka Forum)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Nacka Forum)
+       -1       flow_parity(Årstaberg,Nacka Forum)
+        0.0001  LP_objective
+
+road_util(Vällingby,Årstaberg,Sollentuna)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Sollentuna)
+       -1       flow_parity(Årstaberg,Sollentuna)
+        0.0001  LP_objective
+
+road_util(Vällingby,Årstaberg,Bergshamra)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Bergshamra)
+       -1       flow_parity(Årstaberg,Bergshamra)
+        0.0001  LP_objective
+
+road_util(Vällingby,Årstaberg,Avicii Arena)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Avicii Arena)
+       -1       flow_parity(Årstaberg,Avicii Arena)
+        0.0001  LP_objective
+
+road_util(Vällingby,Årstaberg,Årstaberg)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Årstaberg)
+       -1       flow_parity(Årstaberg,Årstaberg)
+        0.0001  LP_objective
+
+road_util(Vällingby,Årstaberg,T-Centralen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,T-Centralen)
+       -1       flow_parity(Årstaberg,T-Centralen)
+        0.0001  LP_objective
+
+road_util(Vällingby,T-Centralen,Farsta Shopping Centre)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Farsta Shopping Centre)
+       -1       flow_parity(T-Centralen,Farsta Shopping Centre)
+        0.0001  LP_objective
+
+road_util(Vällingby,T-Centralen,Skärholmen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Skärholmen)
+       -1       flow_parity(T-Centralen,Skärholmen)
+        0.0001  LP_objective
+
+road_util(Vällingby,T-Centralen,Vällingby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Vällingby)
+       -1       flow_parity(T-Centralen,Vällingby)
+        0.0001  LP_objective
+
+road_util(Vällingby,T-Centralen,Täby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Täby)
+       -1       flow_parity(T-Centralen,Täby)
+        0.0001  LP_objective
+
+road_util(Vällingby,T-Centralen,Lidingö)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Lidingö)
+       -1       flow_parity(T-Centralen,Lidingö)
+        0.0001  LP_objective
+
+road_util(Vällingby,T-Centralen,Nacka Forum)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Nacka Forum)
+       -1       flow_parity(T-Centralen,Nacka Forum)
+        0.0001  LP_objective
+
+road_util(Vällingby,T-Centralen,Sollentuna)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Sollentuna)
+       -1       flow_parity(T-Centralen,Sollentuna)
+        0.0001  LP_objective
+
+road_util(Vällingby,T-Centralen,Bergshamra)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Bergshamra)
+       -1       flow_parity(T-Centralen,Bergshamra)
+        0.0001  LP_objective
+
+road_util(Vällingby,T-Centralen,Avicii Arena)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Avicii Arena)
+       -1       flow_parity(T-Centralen,Avicii Arena)
+        0.0001  LP_objective
+
+road_util(Vällingby,T-Centralen,Årstaberg)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,Årstaberg)
+       -1       flow_parity(T-Centralen,Årstaberg)
+        0.0001  LP_objective
+
+road_util(Vällingby,T-Centralen,T-Centralen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Vällingby,T-Centralen)
+       -1       flow_parity(T-Centralen,T-Centralen)
+        0.0001  LP_objective
+
+road_util(Täby,Sollentuna,Farsta Shopping Centre)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,Farsta Shopping Centre)
+       -1       flow_parity(Sollentuna,Farsta Shopping Centre)
+        0.0001  LP_objective
+
+road_util(Täby,Sollentuna,Skärholmen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,Skärholmen)
+       -1       flow_parity(Sollentuna,Skärholmen)
+        0.0001  LP_objective
+
+road_util(Täby,Sollentuna,Vällingby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,Vällingby)
+       -1       flow_parity(Sollentuna,Vällingby)
+        0.0001  LP_objective
+
+road_util(Täby,Sollentuna,Täby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,Täby)
+       -1       flow_parity(Sollentuna,Täby)
+        0.0001  LP_objective
+
+road_util(Täby,Sollentuna,Lidingö)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,Lidingö)
+       -1       flow_parity(Sollentuna,Lidingö)
+        0.0001  LP_objective
+
+road_util(Täby,Sollentuna,Nacka Forum)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,Nacka Forum)
+       -1       flow_parity(Sollentuna,Nacka Forum)
+        0.0001  LP_objective
+
+road_util(Täby,Sollentuna,Sollentuna)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,Sollentuna)
+       -1       flow_parity(Sollentuna,Sollentuna)
+        0.0001  LP_objective
+
+road_util(Täby,Sollentuna,Bergshamra)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,Bergshamra)
+       -1       flow_parity(Sollentuna,Bergshamra)
+        0.0001  LP_objective
+
+road_util(Täby,Sollentuna,Avicii Arena)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,Avicii Arena)
+       -1       flow_parity(Sollentuna,Avicii Arena)
+        0.0001  LP_objective
+
+road_util(Täby,Sollentuna,Årstaberg)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,Årstaberg)
+       -1       flow_parity(Sollentuna,Årstaberg)
+        0.0001  LP_objective
+
+road_util(Täby,Sollentuna,T-Centralen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,T-Centralen)
+       -1       flow_parity(Sollentuna,T-Centralen)
+        0.0001  LP_objective
+
+road_util(Täby,Bergshamra,Farsta Shopping Centre)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,Farsta Shopping Centre)
+       -1       flow_parity(Bergshamra,Farsta Shopping Centre)
+        0.0001  LP_objective
+
+road_util(Täby,Bergshamra,Skärholmen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,Skärholmen)
+       -1       flow_parity(Bergshamra,Skärholmen)
+        0.0001  LP_objective
+
+road_util(Täby,Bergshamra,Vällingby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,Vällingby)
+       -1       flow_parity(Bergshamra,Vällingby)
+        0.0001  LP_objective
+
+road_util(Täby,Bergshamra,Täby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,Täby)
+       -1       flow_parity(Bergshamra,Täby)
+        0.0001  LP_objective
+
+road_util(Täby,Bergshamra,Lidingö)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,Lidingö)
+       -1       flow_parity(Bergshamra,Lidingö)
+        0.0001  LP_objective
+
+road_util(Täby,Bergshamra,Nacka Forum)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,Nacka Forum)
+       -1       flow_parity(Bergshamra,Nacka Forum)
+        0.0001  LP_objective
+
+road_util(Täby,Bergshamra,Sollentuna)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,Sollentuna)
+       -1       flow_parity(Bergshamra,Sollentuna)
+        0.0001  LP_objective
+
+road_util(Täby,Bergshamra,Bergshamra)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,Bergshamra)
+       -1       flow_parity(Bergshamra,Bergshamra)
+        0.0001  LP_objective
+
+road_util(Täby,Bergshamra,Avicii Arena)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,Avicii Arena)
+       -1       flow_parity(Bergshamra,Avicii Arena)
+        0.0001  LP_objective
+
+road_util(Täby,Bergshamra,Årstaberg)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,Årstaberg)
+       -1       flow_parity(Bergshamra,Årstaberg)
+        0.0001  LP_objective
+
+road_util(Täby,Bergshamra,T-Centralen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Täby,T-Centralen)
+       -1       flow_parity(Bergshamra,T-Centralen)
+        0.0001  LP_objective
+
+road_util(Lidingö,T-Centralen,Farsta Shopping Centre)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Lidingö,Farsta Shopping Centre)
+       -1       flow_parity(T-Centralen,Farsta Shopping Centre)
+        0.0001  LP_objective
+
+road_util(Lidingö,T-Centralen,Skärholmen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Lidingö,Skärholmen)
+       -1       flow_parity(T-Centralen,Skärholmen)
+        0.0001  LP_objective
+
+road_util(Lidingö,T-Centralen,Vällingby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Lidingö,Vällingby)
+       -1       flow_parity(T-Centralen,Vällingby)
+        0.0001  LP_objective
+
+road_util(Lidingö,T-Centralen,Täby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Lidingö,Täby)
+       -1       flow_parity(T-Centralen,Täby)
+        0.0001  LP_objective
+
+road_util(Lidingö,T-Centralen,Lidingö)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Lidingö,Lidingö)
+       -1       flow_parity(T-Centralen,Lidingö)
+        0.0001  LP_objective
+
+road_util(Lidingö,T-Centralen,Nacka Forum)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Lidingö,Nacka Forum)
+       -1       flow_parity(T-Centralen,Nacka Forum)
+        0.0001  LP_objective
+
+road_util(Lidingö,T-Centralen,Sollentuna)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Lidingö,Sollentuna)
+       -1       flow_parity(T-Centralen,Sollentuna)
+        0.0001  LP_objective
+
+road_util(Lidingö,T-Centralen,Bergshamra)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Lidingö,Bergshamra)
+       -1       flow_parity(T-Centralen,Bergshamra)
+        0.0001  LP_objective
+
+road_util(Lidingö,T-Centralen,Avicii Arena)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Lidingö,Avicii Arena)
+       -1       flow_parity(T-Centralen,Avicii Arena)
+        0.0001  LP_objective
+
+road_util(Lidingö,T-Centralen,Årstaberg)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Lidingö,Årstaberg)
+       -1       flow_parity(T-Centralen,Årstaberg)
+        0.0001  LP_objective
+
+road_util(Lidingö,T-Centralen,T-Centralen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Lidingö,T-Centralen)
+       -1       flow_parity(T-Centralen,T-Centralen)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,Avicii Arena,Farsta Shopping Centre)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,Farsta Shopping Centre)
+       -1       flow_parity(Avicii Arena,Farsta Shopping Centre)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,Avicii Arena,Skärholmen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,Skärholmen)
+       -1       flow_parity(Avicii Arena,Skärholmen)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,Avicii Arena,Vällingby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,Vällingby)
+       -1       flow_parity(Avicii Arena,Vällingby)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,Avicii Arena,Täby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,Täby)
+       -1       flow_parity(Avicii Arena,Täby)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,Avicii Arena,Lidingö)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,Lidingö)
+       -1       flow_parity(Avicii Arena,Lidingö)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,Avicii Arena,Nacka Forum)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,Nacka Forum)
+       -1       flow_parity(Avicii Arena,Nacka Forum)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,Avicii Arena,Sollentuna)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,Sollentuna)
+       -1       flow_parity(Avicii Arena,Sollentuna)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,Avicii Arena,Bergshamra)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,Bergshamra)
+       -1       flow_parity(Avicii Arena,Bergshamra)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,Avicii Arena,Avicii Arena)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,Avicii Arena)
+       -1       flow_parity(Avicii Arena,Avicii Arena)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,Avicii Arena,Årstaberg)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,Årstaberg)
+       -1       flow_parity(Avicii Arena,Årstaberg)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,Avicii Arena,T-Centralen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,T-Centralen)
+       -1       flow_parity(Avicii Arena,T-Centralen)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,T-Centralen,Farsta Shopping Centre)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,Farsta Shopping Centre)
+       -1       flow_parity(T-Centralen,Farsta Shopping Centre)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,T-Centralen,Skärholmen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,Skärholmen)
+       -1       flow_parity(T-Centralen,Skärholmen)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,T-Centralen,Vällingby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,Vällingby)
+       -1       flow_parity(T-Centralen,Vällingby)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,T-Centralen,Täby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,Täby)
+       -1       flow_parity(T-Centralen,Täby)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,T-Centralen,Lidingö)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,Lidingö)
+       -1       flow_parity(T-Centralen,Lidingö)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,T-Centralen,Nacka Forum)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,Nacka Forum)
+       -1       flow_parity(T-Centralen,Nacka Forum)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,T-Centralen,Sollentuna)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,Sollentuna)
+       -1       flow_parity(T-Centralen,Sollentuna)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,T-Centralen,Bergshamra)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,Bergshamra)
+       -1       flow_parity(T-Centralen,Bergshamra)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,T-Centralen,Avicii Arena)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,Avicii Arena)
+       -1       flow_parity(T-Centralen,Avicii Arena)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,T-Centralen,Årstaberg)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,Årstaberg)
+       -1       flow_parity(T-Centralen,Årstaberg)
+        0.0001  LP_objective
+
+road_util(Nacka Forum,T-Centralen,T-Centralen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Nacka Forum,T-Centralen)
+       -1       flow_parity(T-Centralen,T-Centralen)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Vällingby,Farsta Shopping Centre)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,Farsta Shopping Centre)
+        1       flow_parity(Sollentuna,Farsta Shopping Centre)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Vällingby,Skärholmen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,Skärholmen)
+        1       flow_parity(Sollentuna,Skärholmen)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Vällingby,Vällingby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,Vällingby)
+        1       flow_parity(Sollentuna,Vällingby)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Vällingby,Täby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,Täby)
+        1       flow_parity(Sollentuna,Täby)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Vällingby,Lidingö)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,Lidingö)
+        1       flow_parity(Sollentuna,Lidingö)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Vällingby,Nacka Forum)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,Nacka Forum)
+        1       flow_parity(Sollentuna,Nacka Forum)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Vällingby,Sollentuna)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,Sollentuna)
+        1       flow_parity(Sollentuna,Sollentuna)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Vällingby,Bergshamra)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,Bergshamra)
+        1       flow_parity(Sollentuna,Bergshamra)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Vällingby,Avicii Arena)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,Avicii Arena)
+        1       flow_parity(Sollentuna,Avicii Arena)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Vällingby,Årstaberg)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,Årstaberg)
+        1       flow_parity(Sollentuna,Årstaberg)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Vällingby,T-Centralen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,T-Centralen)
+        1       flow_parity(Sollentuna,T-Centralen)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Täby,Farsta Shopping Centre)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,Farsta Shopping Centre)
+        1       flow_parity(Sollentuna,Farsta Shopping Centre)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Täby,Skärholmen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,Skärholmen)
+        1       flow_parity(Sollentuna,Skärholmen)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Täby,Vällingby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,Vällingby)
+        1       flow_parity(Sollentuna,Vällingby)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Täby,Täby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,Täby)
+        1       flow_parity(Sollentuna,Täby)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Täby,Lidingö)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,Lidingö)
+        1       flow_parity(Sollentuna,Lidingö)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Täby,Nacka Forum)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,Nacka Forum)
+        1       flow_parity(Sollentuna,Nacka Forum)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Täby,Sollentuna)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,Sollentuna)
+        1       flow_parity(Sollentuna,Sollentuna)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Täby,Bergshamra)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,Bergshamra)
+        1       flow_parity(Sollentuna,Bergshamra)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Täby,Avicii Arena)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,Avicii Arena)
+        1       flow_parity(Sollentuna,Avicii Arena)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Täby,Årstaberg)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,Årstaberg)
+        1       flow_parity(Sollentuna,Årstaberg)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Täby,T-Centralen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,T-Centralen)
+        1       flow_parity(Sollentuna,T-Centralen)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Bergshamra,Farsta Shopping Centre)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Sollentuna,Farsta Shopping Centre)
+       -1       flow_parity(Bergshamra,Farsta Shopping Centre)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Bergshamra,Skärholmen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Sollentuna,Skärholmen)
+       -1       flow_parity(Bergshamra,Skärholmen)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Bergshamra,Vällingby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Sollentuna,Vällingby)
+       -1       flow_parity(Bergshamra,Vällingby)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Bergshamra,Täby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Sollentuna,Täby)
+       -1       flow_parity(Bergshamra,Täby)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Bergshamra,Lidingö)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Sollentuna,Lidingö)
+       -1       flow_parity(Bergshamra,Lidingö)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Bergshamra,Nacka Forum)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Sollentuna,Nacka Forum)
+       -1       flow_parity(Bergshamra,Nacka Forum)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Bergshamra,Sollentuna)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Sollentuna,Sollentuna)
+       -1       flow_parity(Bergshamra,Sollentuna)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Bergshamra,Bergshamra)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Sollentuna,Bergshamra)
+       -1       flow_parity(Bergshamra,Bergshamra)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Bergshamra,Avicii Arena)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Sollentuna,Avicii Arena)
+       -1       flow_parity(Bergshamra,Avicii Arena)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Bergshamra,Årstaberg)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Sollentuna,Årstaberg)
+       -1       flow_parity(Bergshamra,Årstaberg)
+        0.0001  LP_objective
+
+road_util(Sollentuna,Bergshamra,T-Centralen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+        1       flow_parity(Sollentuna,T-Centralen)
+       -1       flow_parity(Bergshamra,T-Centralen)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Vällingby,Farsta Shopping Centre)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,Farsta Shopping Centre)
+        1       flow_parity(Bergshamra,Farsta Shopping Centre)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Vällingby,Skärholmen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,Skärholmen)
+        1       flow_parity(Bergshamra,Skärholmen)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Vällingby,Vällingby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,Vällingby)
+        1       flow_parity(Bergshamra,Vällingby)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Vällingby,Täby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,Täby)
+        1       flow_parity(Bergshamra,Täby)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Vällingby,Lidingö)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,Lidingö)
+        1       flow_parity(Bergshamra,Lidingö)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Vällingby,Nacka Forum)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,Nacka Forum)
+        1       flow_parity(Bergshamra,Nacka Forum)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Vällingby,Sollentuna)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,Sollentuna)
+        1       flow_parity(Bergshamra,Sollentuna)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Vällingby,Bergshamra)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,Bergshamra)
+        1       flow_parity(Bergshamra,Bergshamra)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Vällingby,Avicii Arena)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,Avicii Arena)
+        1       flow_parity(Bergshamra,Avicii Arena)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Vällingby,Årstaberg)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,Årstaberg)
+        1       flow_parity(Bergshamra,Årstaberg)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Vällingby,T-Centralen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Vällingby,T-Centralen)
+        1       flow_parity(Bergshamra,T-Centralen)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Täby,Farsta Shopping Centre)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,Farsta Shopping Centre)
+        1       flow_parity(Bergshamra,Farsta Shopping Centre)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Täby,Skärholmen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,Skärholmen)
+        1       flow_parity(Bergshamra,Skärholmen)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Täby,Vällingby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,Vällingby)
+        1       flow_parity(Bergshamra,Vällingby)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Täby,Täby)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,Täby)
+        1       flow_parity(Bergshamra,Täby)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Täby,Lidingö)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,Lidingö)
+        1       flow_parity(Bergshamra,Lidingö)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Täby,Nacka Forum)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,Nacka Forum)
+        1       flow_parity(Bergshamra,Nacka Forum)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Täby,Sollentuna)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,Sollentuna)
+        1       flow_parity(Bergshamra,Sollentuna)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Täby,Bergshamra)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,Bergshamra)
+        1       flow_parity(Bergshamra,Bergshamra)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Täby,Avicii Arena)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,Avicii Arena)
+        1       flow_parity(Bergshamra,Avicii Arena)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Täby,Årstaberg)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,Årstaberg)
+        1       flow_parity(Bergshamra,Årstaberg)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Täby,T-Centralen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Täby,T-Centralen)
+        1       flow_parity(Bergshamra,T-Centralen)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Sollentuna,Farsta Shopping Centre)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Sollentuna,Farsta Shopping Centre)
+        1       flow_parity(Bergshamra,Farsta Shopping Centre)
+        0.0001  LP_objective
+
+road_util(Bergshamra,Sollentuna,Skärholmen)
+                (.LO, .L, .UP, .M = 0, 0, +INF, 0)
+       -1       flow_parity(Sollentuna,Skärholmen)
+        1       flow_parity(Bergshamra,Skärholmen)
+        0.0001  LP_objective
+
+REMAINING 174 ENTRIES SKIPPED
+
+---- LP_objective_variable  
+
+LP_objective_variable
+                (.LO, .L, .UP, .M = -INF, 0, +INF, 0)
+       -1       LP_objective
+
+GAMS 49.4.0  6fb2fe8b Apr 6, 2025           LEX-LEG x86 64bit/Linux - 04/29/25 15:06:01 Page 4
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+Model Statistics    SOLVE LP Using MIP From line 36
+
+
+MODEL STATISTICS
+
+BLOCKS OF EQUATIONS           2     SINGLE EQUATIONS          122
+BLOCKS OF VARIABLES           2     SINGLE VARIABLES          375
+NON ZERO ELEMENTS         1,123
+
+
+GENERATION TIME      =        0.094 SECONDS      4 MB  49.4.0 6fb2fe8b LEX-LEG
+GAMS 49.4.0  6fb2fe8b Apr 6, 2025           LEX-LEG x86 64bit/Linux - 04/29/25 15:06:01 Page 5
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+Solution Report     SOLVE LP Using MIP From line 36
+
+
+               S O L V E      S U M M A R Y
+
+     MODEL   LP                  OBJECTIVE  LP_objective_variable
+     TYPE    MIP                 DIRECTION  MINIMIZE
+     SOLVER  CPLEX               FROM LINE  36
+
+**** SOLVER STATUS     1 Normal Completion
+**** MODEL STATUS      1 Optimal
+**** OBJECTIVE VALUE               19.0252
+
+ RESOURCE USAGE, LIMIT          0.009 10000000000.000
+ ITERATION COUNT, LIMIT       101    2147483647
+--- GAMS/CPLEX licensed for continuous and discrete problems.
+--- GMO setup time: 0.00s
+--- Space for names approximately 0.03 Mb
+--- Use option 'names no' to turn use of names off
+--- GMO memory 0.56 Mb (peak 0.56 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 22.1.2.0 link memory 0.01 Mb (peak 0.05 Mb)
+--- Starting Cplex
+
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.01sec (det. 0.63 ticks)
+
+
+Optimal solution found
+Objective:           19.025200
+
+
+
+**** REPORT SUMMARY :        0     NONOPT
+                             0 INFEASIBLE
+                             0  UNBOUNDED
+GAMS 49.4.0  6fb2fe8b Apr 6, 2025           LEX-LEG x86 64bit/Linux - 04/29/25 15:06:01 Page 6
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+E x e c u t i o n
+
+
+EXECUTION TIME       =        0.306 SECONDS      4 MB  49.4.0 6fb2fe8b LEX-LEG
+
+
+USER: Academic User                                  G250402+0003Ac-GEN
+      anhd@kth.se                                             GPA105743
+      License for teaching and research at degree granting institutions
+
+
+**** FILE SUMMARY
+
+Input      /workspaces/SF2822/model no constraint/_f1ba5da8-ba2e-4d1f-9dd5-c8a5239be381.gms
+Output     /workspaces/SF2822/model no constraint/_f1ba5da8-ba2e-4d1f-9dd5-c8a5239be381.lst
