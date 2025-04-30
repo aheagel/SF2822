@@ -1,6 +1,0 @@
-* Trace Record Definition
-* GamsSolve
-* InputFileName,ModelType,SolverName,NLP,MIP,JulianDate,Direction,NumberOfEquations,NumberOfVariables,NumberOfDiscreteVariables,NumberOfNonZeros,NumberOfNonlinearNonZeros,OptionFile,ModelStatus,SolverStatus,ObjectiveValue
-* ,ObjectiveValueEstimate,SolverTime,NumberOfIterations,NumberOfDomainViolations,NumberOfNodes,#User1
-*
-_b141f017-bda8-470a-8f15-3c88e7d0c3c6.gms,MIP,CPLEX,IPOPTH,CPLEX,45775.632,0,122,375,0,1123,0,NA,1,1,19.0251995952907,NA,0.013,101,NA,NA,#

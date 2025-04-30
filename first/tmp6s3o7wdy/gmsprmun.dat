@@ -1,9 +1,0 @@
-Input=GAMSPY_JOB
-ScrDir=/workspaces/SF2822/first/tmp6s3o7wdy
-SysDir=/usr/local/python/3.12.1/lib/python3.12/site-packages/gamspy_base
-CurDir=""
-ScriptNext=/workspaces/SF2822/first/tmp6s3o7wdy/gamsnext.sh
-License=/home/codespace/.local/share/GAMSPy/gamspy_license.txt
-ProcDir=/workspaces/SF2822/first/tmp6s3o7wdy
-IncrementalMode=2
-NetLicense=/workspaces/SF2822/first/tmp6s3o7wdy/gamslice.dat
