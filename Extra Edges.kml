@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Extra Edges</name>
+    <Style id="line-E65100-1200-normal">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>1.2</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-E65100-1200-highlight">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>1.8</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-E65100-1200">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-E65100-1200-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-E65100-1200-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>Nacka Undergound V2</name>
+      <description>Farsta to Nacka</description>
+      <styleUrl>#line-E65100-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          18.1647739,59.3100161,0
+          18.0919125,59.2428599,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Förbifart Stockholm</name>
+      <description>Vällingby to Skärholmen</description>
+      <styleUrl>#line-E65100-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          17.8691434,59.3670813,0
+          17.9023009,59.2742539,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Long Bridge</name>
+      <description>Nacka to Lidingö</description>
+      <styleUrl>#line-E65100-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          18.1647739,59.3100161,0
+          18.1468,59.36296,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Super Bridge</name>
+      <description>Täby to Lidingö</description>
+      <styleUrl>#line-E65100-1200</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          18.0703299,59.4419,0
+          18.1468,59.36296,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>
