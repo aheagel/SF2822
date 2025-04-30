@@ -1,0 +1,6 @@
+* Trace Record Definition
+* GamsSolve
+* InputFileName,ModelType,SolverName,NLP,MIP,JulianDate,Direction,NumberOfEquations,NumberOfVariables,NumberOfDiscreteVariables,NumberOfNonZeros,NumberOfNonlinearNonZeros,OptionFile,ModelStatus,SolverStatus,ObjectiveValue
+* ,ObjectiveValueEstimate,SolverTime,NumberOfIterations,NumberOfDomainViolations,NumberOfNodes,#User1
+*
+_b769e944-9fd1-43c7-aa78-a1dd97f13e74.gms,NLP,CONOPT,CONOPT,CPLEX,45776.388,0,122,375,0,1123,374,NA,7,4,-42130185839739,NA,0.05,49,0,NA,#

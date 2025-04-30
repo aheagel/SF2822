@@ -1,0 +1,82 @@
+=1
+=2
+=0CONOPT 4         49.4.0 6fb2fe8b Apr 6, 2025           LEG x86 64bit/Linux    
+=1
+--- *** This solver runs with a community license.
+=2
+=1
+ 
+ 
+    C O N O P T   version 4.36
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+=2
+=1
+    Will use up to 2 threads.
+ 
+=2
+ 
+  ***  Line    0  SET       LFEERR =            0
+ 
+  ***  Line    0  SET       LFEERR =            0
+ 
+  ***  Line    0  SET       LFITER =   2147483647
+ 
+  ***  Line    0  SET       RVTIME =     1.0000000000E+10
+=1
+ 
+    The user model has 123 constraints and 376 variables
+    with 1498 Jacobian elements, 374 of which are nonlinear.
+    The Hessian of the Lagrangian has 374 elements on the diagonal,
+    1870 elements below the diagonal, and 374 nonlinear variables.
+=2
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+       0   0          2.0303920940E+01 (Input point)
+=1
+ 
+    The post-triangular part of the model has 2 constraints and variables.
+=2
+=1
+ 
+    Preprocessed model has 121 constraints and 374 variables
+    with 748 Jacobian elements, 0 of which are nonlinear.
+=2
+                      0.0000000000E+00 (Full preprocessed model)
+                      0.0000000000E+00 (After scaling)
+ 
+    Iter Phase   Ninf   Infeasibility   RGmax      NSB   Step  InItr MX OK
+ 
+ ** Feasible solution. Value of objective =    20.3039209400
+ 
+Search for an optimal solution.
+ 
+ 
+    Iter Phase   Ninf     Objective     RGmax      NSB   Step  InItr MX OK
+       1   3          2.0118340044E+01 2.8E-01       4 1.6E-02     4 F  T
+       2   4          2.0050733484E+01 1.3E-01       4 1.0E+00     5 T  T
+       3   4          2.0029548241E+01 1.9E-04       1 1.0E+00     5 F  T
+       4   4          2.0023499992E+01 8.7E-03       1 1.0E+00     1 F  T
+       5   4          2.0022843318E+01 4.4E-03       1 1.0E+00     1 F  T
+       6   4          2.0022833161E+01 1.3E-04       1 1.0E+00     1 F  T
+       7   4          2.0022833158E+01 2.1E-06       1 1.0E+00     1 F  T
+       8   4          2.0022833158E+01 6.1E-10       1
+=1
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+=2
+=1
+ 
+ CONOPT time Total                            0.016 seconds
+   of which: Function evaluations             0.000 =  0.0%
+             1st Derivative evaluations       0.000 =  0.0%
+             2nd Derivative evaluations       0.000 =  0.0%
+             Directional 2nd Deriv(Hess)      0.000 =  0.0%
+ 
+=2
+ 
+ Memory: Max used =      1.02 Mbytes
+  Total Allocated =      1.11 Mbytes
+ 

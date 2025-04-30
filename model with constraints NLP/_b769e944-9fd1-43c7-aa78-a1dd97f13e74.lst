@@ -1,0 +1,96 @@
+GAMS 49.4.0  6fb2fe8b Apr 6, 2025           LEX-LEG x86 64bit/Linux - 04/30/25 09:18:51 Page 1
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+C o m p i l a t i o n
+
+
+  36  Model NLP / flow_parity,NLP_objective /;
+  37  solve NLP using NLP MIN NLP_objective_variable
+  38   
+
+
+COMPILATION TIME     =        0.000 SECONDS      3 MB  49.4.0 6fb2fe8b LEX-LEG
+GAMS 49.4.0  6fb2fe8b Apr 6, 2025           LEX-LEG x86 64bit/Linux - 04/30/25 09:18:51 Page 2
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+Model Statistics    SOLVE NLP Using NLP From line 40
+
+
+MODEL STATISTICS
+
+BLOCKS OF EQUATIONS           2     SINGLE EQUATIONS          122
+BLOCKS OF VARIABLES           2     SINGLE VARIABLES          375
+NON ZERO ELEMENTS         1,123     NON LINEAR N-Z            374
+CODE LENGTH               1,669     CONSTANT POOL              68
+
+
+GENERATION TIME      =        0.006 SECONDS      4 MB  49.4.0 6fb2fe8b LEX-LEG
+GAMS 49.4.0  6fb2fe8b Apr 6, 2025           LEX-LEG x86 64bit/Linux - 04/30/25 09:18:51 Page 3
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+Solution Report     SOLVE NLP Using NLP From line 40
+
+
+               S O L V E      S U M M A R Y
+
+     MODEL   NLP                 OBJECTIVE  NLP_objective_variable
+     TYPE    NLP                 DIRECTION  MINIMIZE
+     SOLVER  CONOPT              FROM LINE  40
+
+**** SOLVER STATUS     4 Terminated By Solver
+**** MODEL STATUS      7 Feasible Solution
+**** OBJECTIVE VALUE   -42130185839739.0391
+
+ RESOURCE USAGE, LIMIT          0.050 10000000000.000
+ ITERATION COUNT, LIMIT        49    2147483647
+ EVALUATION ERRORS              0             0
+--- *** This solver runs with a community license.
+ 
+ 
+    C O N O P T   version 4.36
+    Copyright (C) GAMS Software GmbH
+                  GAMS Development Corporation
+ 
+    Will use up to 2 threads.
+ 
+ 
+    The user model has 122 constraints and 375 variables
+    with 1123 Jacobian elements, 374 of which are nonlinear.
+    The Hessian of the Lagrangian has 374 elements on the diagonal,
+    1870 elements below the diagonal, and 374 nonlinear variables.
+ 
+    The post-triangular part of the model has 1 constraints and variables.
+ 
+    Preprocessed model has 121 constraints and 374 variables
+    with 748 Jacobian elements, 0 of which are nonlinear.
+ 
+ ** Feasible solution. Convergence too slow. The change in objective
+    has been less than 126.4 for 20 consecutive iterations
+ 
+ 
+ CONOPT time Total                            0.045 seconds
+   of which: Function evaluations             0.003 =  6.7%
+             1st Derivative evaluations       0.003 =  6.7%
+             2nd Derivative evaluations       0.010 = 22.2%
+             Directional 2nd Deriv(Hess)      0.002 =  4.4%
+ 
+
+
+**** REPORT SUMMARY :        8     NONOPT ( NOPT)
+                             0 INFEASIBLE
+                             0  UNBOUNDED
+                             0     ERRORS
+GAMS 49.4.0  6fb2fe8b Apr 6, 2025           LEX-LEG x86 64bit/Linux - 04/30/25 09:18:51 Page 4
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+E x e c u t i o n
+
+
+EXECUTION TIME       =        0.065 SECONDS      4 MB  49.4.0 6fb2fe8b LEX-LEG
+
+
+USER: Academic User                                  G250402+0003Ac-GEN
+      anhd@kth.se                                             GPA105743
+      License for teaching and research at degree granting institutions
+
+
+**** FILE SUMMARY
+
+Input      /workspaces/SF2822/model with constraints NLP/_b769e944-9fd1-43c7-aa78-a1dd97f13e74.gms
+Output     /workspaces/SF2822/model with constraints NLP/_b769e944-9fd1-43c7-aa78-a1dd97f13e74.lst
